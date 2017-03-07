@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    
+
+    <link rel='stylesheet' type='text/css' href='css/index.css' />
+    <link rel='stylesheet' type='text/css' href='js/jquery.mobile-1.4.5.min.css' />
+	<script src='js/jquery-1.8.0.min.js'></script>
+	<script src='js/jquery.mobile-1.4.5.min.js'></script>
+	<script src='jcanvas.min.js'></script>
+	<script src="itungan.js">	</script>
+	<script src="MathJax.js?config=TeX-AMS-MML_HTMLorMML.js">	</script>
+	
+	
+
+	
+	<script>
+$(function() {
+    	$( "[data-role='navbar']" ).navbar();
+    	$( "[data-role='footer']" ).toolbar();
+    	$( "[data-role='footer']" ).toolbar({ theme: "b" });
+   	$(".ui-header, .ui-footer").toolbar("toggle");
+
+			$( "body>[data-role='panel']" ).panel();
+			$( "[data-role='listview']").listview();
+		});
+		
+
+
+	</script>
+	<script src="event.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <div data-role="page" id="menu" data-fullscreen="true">
+		    
+		<div data-role="main-content" >
+			<div class="ui-grid-solo">
+				<div class="ui-block-a"><img src="img/gp.png" class="fr" alt="" width="300"></div>
+				<div class="blink ui-block-a" style="text-align: center"> SENTUH LAYAR </div>
+			</div>		
+		</div>
+		    
+		    
+    </div>
+    
+    <div data-role="page" id="blank" data-fullscreen="true">
+		    
+		<div data-role="main-content">
+		<a href="#howtouse" class="ui-btn ui-icon-info ui-btn-icon-notext ui-corner-all"></a>
+			<div class="ui-grid-solo">
+				<div class="ui-block-a"><h1>Selamat datang</h1>
+				Untuk memulai silakan pilih salah satu menu di bawah ini<br>
+				<div class="wrapper"><i>disarankan untuk membuka menu "materi" terlebih dahulu</i></div>
+				</div>
+			</div>		
+				<div class="ui-grid-d">
+						<div class="ui-block-a mentul"><img src="img/down.png" alt=""></div>
+						<!--div class="ui-block-b"><img src="img/down.png" alt=""></div>
+						<div class="ui-block-c"><img src="img/down.png" alt=""></div>
+						<div class="ui-block-d"><img src="img/down.png" alt=""></div>
+						<div class="ui-block-e"><img src="img/down.png" alt=""></div-->
+					</div>	
+			
+		</div>
+		    
+    </div>
+    
+	<div data-role="page" id="howtouse" data-dialog="true">
+		<div data-role="main-content">
+			<div class="wrapper">
+			<ul data-role="listview">
+				<li>Setelah kalian tekan "close", kalian akan memasuki menu utama</li>
+				<li>Terdapat 5 menu yaitu:</li>
+					<ul><li>Materi: merupakan konsep dasar pembelajaran ini</li>
+						<li>Simulasi: sebuah gambaran yang menjiplak kenyataan</li>
+						<li>Latihan: digunakan untuk mengukur sejauh mana kemampuan kalian</li>
+						<li>Tentang: merupakan daftar aplikasi yang terlibat dalam pembuatan aplikasi ini</li>
+						<li>Keluar: digunakan untuk keluar dari program</li></ul>
+			</ul>	
+				</div>
+			<a href="#blank" class="ui-btn ui-btn-icon-left ui-icon-yes">Saya mengerti dan tutup</a>
+		</div>
+		    
+    </div>    
+    
+    
+       
+   <div data-role="page" id="materi" >
+		<div data-role="header" data-position="fixed">
+			<h4>Materi</h4>
+			<a href="#menyu" class="ui-btn ui-icon-opmen ui-btn-icon-right ui-nodisc-icon">Daftar Isi</a>		
+		</div>    
+		<div data-role="main-content">
+		 <p class="top">Perhatikan video dibawah ini</p>
+			<video height="200" controls class="vid">
+				<source src="mg.mp4" type="video/mp4"> 
+			</video>
+	
+	
+	<p class="bottom">Menurut kalian, apa yang terdapat dalam video diatas?<br>
+		Menurut kalian, dapatkah kalian menyebutkan peristiwa tersebut?<br>
+		Menurut kalian, besaran apa saja yang terdapat dalam peristiwa tersebut?
+	
+		</p>
+    </div>
+   </div>
+   
+<div data-role="page" id="pendahuluan" data-theme="a">
+
+	
+			<div data-role="header"  data-position="fixed" class="ui-state-persist">
+	<a href="#menyu" class="ui-btn ui-icon-opmen ui-btn-icon-right ui-nodisc-icon">Daftar Isi</a>		
+			<h4 style="text-align:center">Pendahuluan</h4>
+	</div><!--header-->
+	<div class="wrapper">
+	<div data-role="main" class="ui-content">
+	<p>	Pada kegiatan sehari-hari, seringkali fenomena fisika terjadi. Salah satunya gerak melambung bola saat disepak. Menurut kalian mengapa bola dapat bergerak dengan lintasan parabola?<br></p>
+				<div>
+				<ul type="a" data-role="listview" data-inset="true">
+					<li><a href="#kr" data-rel="popup" class="ui-btn  ui-btn-icon-left ui-icon-opa ui-nodisc-icon" data-transition="pop">. Karena ada gaya gravitasi</a></li>
+					<li><a href="#kr" data-rel="popup" class="ui-btn  ui-btn-icon-left ui-icon-opb ui-nodisc-icon" data-transition="pop">. Karena ada gaya yang bekerja pada bola</a></li>
+					<li><a href="#bet" data-rel="popup" class="ui-btn ui-btn-icon-left ui-icon-opc ui-nodisc-icon" data-transition="pop">. Semua benar</a></li>				
+					<li><a href="#sa" data-rel="popup" class="ui-btn ui-btn-icon-left ui-icon-opd ui-nodisc-icon" data-transition="pop">. Semua salah</a></li>				
+				</ul>				
+				
+				</div>	
+		<p class="bottom">Nah, setelah kalian menjawab pertanyaan tadi, akan kita bahas fenomena tersebut pada materi gerak parabola</p>
+		
+		
+<div data-role="popup" id="sa">
+<p>Maaf, anda salah</p>
+</div>
+
+<div data-role="popup" id="kr">
+<p>Kurang tepat, sedikit lagi</p>
+</div>
+
+<div data-role="popup" id="bet">
+<p>Benar, selamat</p>
+</div>
+		
+		
+		<br>
+	</div>
+	</div>
+</div>
+   
+   
+   
+<div data-role="page" id="kecses" data-theme="a">
+	<div data-role="header"  data-position="fixed" class="ui-state-persist">
+	<a href="#menyu" class="ui-btn ui-icon-opmen ui-btn-icon-right ui-nodisc-icon">Daftar Isi</a>		
+			<h4 style="text-align:center">Kecepatan Sesaat</h4>
+	</div><!--header-->
+	<div data-role="main" class="ui-content">
+	<div class="wrapper">
+<p>Kecepatan pada waktu t sekon berlaku sebagai berikut:</p>
+		<img src="img/kecses.png" class="mate">				
+		</p>
+		<p class="bottom">Gerak dalam arah mendatar berlaku gerak lurus beraturan sehingga:<br>
+		  \[
+		  v_x=v_{ox}=v_o cos \alpha t
+		  \]
+		   
+		Gerak dalam arah vertikal berlaku gerak lurus berubah beraturan sehingga berlaku:<br>
+		  \[
+		  v_y=v_o sin \alpha - gt
+		  \]
+
+		 Resultan Kecepatan berlaku 
+		 		 \[
+		 v=\sqrt{v_x^2+v_y^2}
+		 \]
+		</p>	
+</div>	 	
+	</div>
+</div>       
+       
+       
+       
+       <div data-role="page" id="kecawal" data-theme="a">
+	<div data-role="header"  data-position="fixed" class="ui-state-persist">
+	<a href="#menyu" class="ui-btn ui-icon-opmen ui-btn-icon-right ui-nodisc-icon">Daftar Isi</a>		
+			<h4 style="text-align:center">Kecepatan Awal</h4>
+	</div><!--header-->
+	<div data-role="main" class="ui-content">
+	<div class="wrapper">
+<p>pada gerak parabola kecepatan awal terdiri dari kecepatan awal pada arah vertikal (sumbu Y) dan arah horizontal (sumbu X). Benda membentuk sudut sebesar &alpha; dapat digambarkan menggunakan grafik sebagai berikut:</p>
+		<img src="img/1.png" class="mate" >				
+		
+		<p class="bottom">Gerak parabola merupakan perpaduan gerak lurus beraturan (GLB) pada arah horizontal atau sumbu X dan gerak lurus berubah beraturan (GLBB) pada arah vertikal atau sumbu Y.<br>
+		 Kecepatan awal pada sumbu X berlaku 
+		 \[
+		  v_{ox}=v_o cos \alpha_{o} t
+		  \]
+		 Kecepatan awal pada sumbu Y berlaku 
+		 \[
+		 v_{oy}=v_o sin \alpha_{o} t
+		 \]
+		 Resultan Kecepatan awal berlaku 
+		 \[
+		 v_o=\sqrt{v_{ox}^2+v_{oy}^2}
+		 \]
+		</p>	
+		
+</div>	 	
+	</div>
+</div>
+
+
+<div data-role="page" id="posben" data-theme="a">
+	<div data-role="header"  data-position="fixed" class="ui-state-persist">
+	<a href="#menyu" class="ui-btn ui-icon-opmen ui-btn-icon-right ui-nodisc-icon">Daftar Isi</a>		
+			<h4 style="text-align:center">Posisi Benda</h4>
+	</div><!--header-->
+	<div data-role="main" class="ui-content">
+	<div class="wrapper">
+<p class="bottom">Gerak dalam arah horizontal:<br>
+\[
+x=v_{ox}t=(v_o cos \alpha) t
+\]
+		gerak dalam arah vertikal:<br>
+\[
+y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
+\]		 		 
+		 Besar perpindahan, 
+		 \[
+		 R= \sqrt{x^2+y^2}
+		 \]
+
+		</p>	
+		
+</div>	 	
+	</div>
+</div>
+
+<div data-role="page" id="ketmaks" data-theme="a">
+	<div data-role="header"  data-position="fixed" class="ui-state-persist">
+	<a href="#menyu" class="ui-btn ui-icon-opmen ui-btn-icon-right ui-nodisc-icon">Daftar Isi</a>		
+			<h4 style="text-align:center">Ketinggian Maksimum</h4>
+	</div><!--header-->
+	<div data-role="main" class="ui-content">
+	<div class="wrapper">
+	<img src="img/ketmaks.png" class="mate">
+<p>Pada saat benda ketinggian maksimum, kecepatan arah vertikal sama dengan nol. Sehingga <br>
+		\[
+		v_y=0
+		\]
+		\[
+		v_o sin \alpha -gt =0
+		\]
+		\[
+		v_o sin \alpha = gt
+		\]
+		\[
+		t_{ymax} = {v_o sin \alpha \over g}
+		\]
+	
+		
+		<p class="bottom">Substitusi nilai t <sub>ymax</sub> ke persamaan posisi untuk gerak arah vertikal:<br>
+		\[
+		y_{max} = v_{oy} t_{ymax} - \frac{1}{2} gt_{ymax}^2
+		\]
+		\[
+		y_{max}= (v_o sin \alpha) t_{ymax} - \frac{1}{2}gt_{ymax}^2
+		\]
+		\[
+		y_{max} = (v_o sin \alpha) {\left (v_o sin \alpha \over g \right)} - \frac{1}{2}g{\left (v_o sin \alpha \over g \right)}^2
+		\]
+		\[
+		y_{max} = {v_o^2 sin^2 \alpha \over g} - {v_o^2 sin^2 \alpha \over 2g}
+		\]
+		\[
+		y_{max} = {v_o^2 sin^2 \alpha \over 2g}
+		\]
+		  
+		  Keterangan :
+<br>y<sub>max</sub> =  ketinggian maksimum 			
+
+		</p>
+		
+</div>	 	
+	</div>
+</div>
+
+
+<div data-role="page" id="jarjang" data-theme="a">
+	<div data-role="header"  data-position="fixed" class="ui-state-persist">
+	<a href="#menyu" class="ui-btn ui-icon-opmen ui-btn-icon-right ui-nodisc-icon">Daftar Isi</a>		
+			<h4 style="text-align:center">Jangkauan Maksimum</h4>
+	</div><!--header-->
+	<div data-role="main" class="ui-content">
+	<div class="wrapper">
+<img src="img/jarjang.png" class="mate">				
+<p>Jarak jangkauan dapat dihitung dengan meninjau gerak benda selama mengudara atau dua kali waktu yang digunakan untuk mencapai tinggi maksimum. Sehingga <br>
+		\[
+		t_{xmax} = 2t_{ymax}
+		\]		
+		\[
+		t_{xmax} = {2v_o sin \alpha \over g}
+		\]		
+		keterangan:<br>		
+		t<sub>xmax</sub>	 = waktu yang diperlukan untuk mencapai jarak jangkauan (x<sub>max</sub>) <br>
+		
+		<p class="bottom">Substitusi nilai t <sub>xmax</sub> ke persamaan posisi benda setiap saat:<br>
+		\[
+		x_{max}=(v_o cos \alpha) t_{max}		
+		\]
+		\[
+		x_{max} = (v_o cos \alpha) { \left (2v_o sin \alpha \over g \right)}
+		\]
+		\[
+		x_{max} = {v_o^2 (2 cos \alpha sin \alpha) \over g}
+		\]
+		Menurut rumus trigonometri, 2 sin &alpha; cos &alpha; = sin 2&alpha;, sehingga:<br>		  
+		\[
+		x_{max} = {v_o^2 sin 2 \alpha \over g}
+		\]  
+		
+		 
+		</p>	
+		
+</div>	 	
+	</div>
+</div>
+    
+    <div data-role="page" id="simulasi">
+		<div data-role="header">
+		<h4>Simulasi Gerak Parabola</h4></div>    
+		<div data-role="main-content">
+				
+				<div class="ui-grid-a">
+					<div class="ui-block-a" style="width:55%"><canvas id="sim" width="800" height="400">HP anda tidak support! Maaf</canvas>
+						<div class="ui-grid-a">
+							<div class="ui-block-a"><button class="ui-btn  ui-btn-icon-left ui-icon-play ui-nodisc-icon" onclick="start()">Mulai</button></div>					
+							<div class="ui-block-b"><button class="ui-btn  ui-btn-icon-left ui-icon-stop ui-nodisc-icon" onclick="rese()">Berhenti</button></div>					
+							<div class="ui-block-a"><button class="ui-btn  ui-btn-icon-left ui-icon-pause ui-nodisc-icon" onclick="puse()">Jeda</button></div>					
+							<div class="ui-block-b"><button class="ui-btn  ui-btn-icon-left ui-icon-resume ui-nodisc-icon" onclick="res()">Lanjut</button></div>					
+						</div>						
+					</div>
+					<div class="ui-block-b" style="width:40%">
+						<div class="ui-grid-solo"><div class="ui-block-a" ><label for="v" >Kecepatan Awal (m/s):</label></div></div>
+						<div class="ui-grid-b">
+							<div class="ui-block-a" style="width: 10%">10</div>
+							<div class="ui-block-b" style="width: 75%"><input name="v" id="v" min="10" max="50" step="1" type="range" value="10" data-popup-enabled="true" data-highlight="true" data-mini="true"></div>
+							<div class="ui-block-c" style="width: 10%">50</div>
+						</div>
+						<div class="ui-grid-solo"><div class="ui-block-a" ><label for="sud" >Sudut Awal (<sup>o</sup>):</label></div></div>
+						<div class="ui-grid-b">
+							<div class="ui-block-a" style="width: 10%">10</div>
+							<div class="ui-block-b" style="width: 75%"><input name="sud" id="sud" min="10" max="90" step="1" type="range"  data-popup-enabled="true" data-highlight="true" value="10" data-mini="true"></div>
+							<div class="ui-block-c" style="width: 10%">90</div>
+						
+						</div>
+							<div class="ui-grid-solo">Perkiraan Kecepatan bola yang telah diuraikan terhadap sumbunya</div>
+							<div class="ui-grid-c" style="margin-left: 3%;margin-top: 3%">																		
+								<div class="ui-block-a" style="width: 10%">Vx :</div>
+								<div class="ui-block-b" style="width: 5%">0</div>
+								<div class="ui-block-c" style="width: 70%"><meter min="0" id="vxm" max="50"></meter></div>
+								<div class="ui-block-d" style="width: 7%">50</div>
+								<div class="ui-block-a" style="width: 10%">Vy :</div>
+								<div class="ui-block-b" style="width: 5%">0</div>
+								<div class="ui-block-c" style="width: 70%"><meter min="0" id="vym" max="50"></meter></div>
+								<div class="ui-block-d" style="width: 7%">50</div>
+								<div class="ui-block-a" style="width: 10%">Vr :</div>
+								<div class="ui-block-b" style="width: 5%">0</div>
+								<div class="ui-block-c" style="width: 70%"><meter min="0" id="vrm" max="50"></meter></div>
+								<div class="ui-block-d" style="width: 7%">50</div>							
+							</div>				
+					</div>				
+				</div>		
+		</div>    
+    </div>
+    
+    <div data-role="page" id="latihan">
+		<div data-role="header"><h4>Latihan</h4></div>   
+		<div data-role="main-content">
+		<div class="ui-grid-b">
+			<div class="ui-block-a">
+				<a href="#sol1" class="ui-btn" id="soal1"><div class="answer1">Soal 1</div></a>
+			</div>
+			<div class="ui-block-b">
+				<a href="#sol2" class="ui-btn " id="soal2"><div class="answer2">Soal 2</div></a>
+			</div>
+			<div class="ui-block-c">
+				<a href="#sol3" class="ui-btn " id="soal3"><div class="answer3">Soal 3</div></a>
+			</div>
+			<div class="ui-block-a">
+				<a href="#sol4" class="ui-btn " id="soal4"><div class="answer4">Soal 4</div></a>
+			</div>
+			<div class="ui-block-b">
+				<h1>Skor mu kali ini : <p id="skor" class="bottom">0</p></h1>
+			</div>
+			<div class="ui-block-c">
+				<a href="#sol5" class="ui-btn " id="soal5"><div class="answer5">Soal 5</div></a>
+			</div>
+		</div>
+		
+		</div>    
+    </div>
+
+
+    
+    
+    <div data-role="page" id="about">
+		<div data-role="header"><h4>Tentang</h4></div>     
+		<div data-role="main-content">
+		<h2>Aplikasi ini dibuat dengan menggunakan</h2>
+		<ul data-role="listview" >
+			<li ><img src="img/phonelogo.png"><h3>PhoneGap</h3><p>&copy; 2013 Adobe System Incorporated</p></li>
+			<li ><img src="img/bluefishlogo.png"><h3>Bluefish</h3><p>&copy; 1998-2015 Olivier Sessink</p></li>
+			<li ><img src="img/jqm.png"><h3>Jquery Mobile</h3><p>&copy; 2017 The jQuery Foundation.</p></li>
+			<li ><img src="img/jquery-logo.png"><h3>Jquery</h3><p>&copy; 2017 The jQuery Foundation</p></li>
+			<li ><img src="img/jc.png"><h3>Jcanvas</h3><p>&copy; 2016 Caleb Evans.</p></li>
+			<li ><img src="img/lologo.png"><h3>LibreOffice</h3><p>&copy; 2000-2016 Libre Office Contributors</p></li>
+			<li ><img src="img/logo-gimp.png"><h3>GIMP</h3><p>&copy; 1995-2016 GIMP (GNU Image Manipulation Program). Spencer Kimball, Peter Mattis</p></li>
+			<li ><img src="img/mj.png"><h3>MathJax</h3><p>&copy; 2009-2017 The MathJax Team</p></li>
+			<li ><img src="img/audalogo.png"><h3>Audacity</h3><p>&copy; 2016 Dominic Mazzoni and The Audacity Team.</p></li>
+			<li ><h3>Pembuat Aplikasi</h3><p>Dibuat oleh Satria Adhi Kusuma M. dalam rangka penyusunan skripsi sebagai syarat kelulusan</p></li>
+		</ul>		
+		
+		</div>    
+    </div>
+    
+    <div data-role="page" id="exit" data-dialog="true" data-theme="a">
+			<div data-role="main-content">
+				<div class="ui-grid-solo">	
+					<div class="ui-block-a"><h2>Apakah anda yakin mau keluar?</h2></div>
+				</div>
+				<div class="ui-grid-a" >
+					<div class="ui-block-a"><button onclick="metu()"class="ui-btn ui-btn-icon-left ui-icon-yes">Ya</button></div>				
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-btn-icon-left ui-icon-no" onclick="deflect()" data-rel="back">Tidak</a></div>				
+				</div>
+			</div>    
+    </div>
+    <audio src="sound/ok.ogg" id="ok" autostart="false"></audio>
+    <audio src="sound/deflect.ogg" id="deflect" autostart="false"></audio>
+    <audio src="sound/start.ogg" autoplay="true" ></audio>
+		
+	<div data-role="panel" id="menyu" data-position="left" data-display="overlay" data-theme="b">
+        <h5 style="text-align: center">Daftar Isi</h5>
+        <ul data-role="listview" class="lis" data-position-fixed="true">
+        
+        		<li><a href="skkd.html" >SK dan KD</a></li>	
+        		<li><a href="tujuan.html" >Tujuan</a></li>	
+        		<li><a href="#pendahuluan" >Pendahuluan</a></li>	
+        		<li><a href="#kecawal" >Kecepatan Awal</a></li>	
+        		<li><a href="#kecses" >Kecepatan Sesaat</a></li>	
+        		<li><a href="#posben" >Posisi Benda</a></li>	
+        		<li><a href="#ketmaks" >Ketinggian Maksimum</a></li>	
+        		<li><a href="#jarjang" >Jarak Jangkauan</a></li>	
+        </ul>
+        
+	</div> 
+    
+    
+    <div data-role="footer" data-fullscreen="true" data-position="fixed">
+		<div data-role="navbar" data-grid="d" >
+		<ul id="tools">
+			<li><a href="#materi" class="ui-state-persist ui-btn-icon-top ui-icon-materi" onclick="playtool(this)">MATERI</a></li>		
+			<li><a href="#simulasi" class="ui-state-persist ui-btn-icon-top ui-icon-simulasi" onclick="playtool(this)">SIMULASI</a></li>		
+			<li><a href="#latihan" class="ui-state-persist ui-btn-icon-top ui-icon-latihan" onclick="playtool(this)">LATIHAN</a></li>		
+			<li><a href="#about" class="ui-state-persist ui-btn-icon-top ui-icon-about" onclick="playtool(this)">TENTANG</a></li>		
+			<li><a href="#exit" class="ui-state-persist ui-btn-icon-top ui-icon-exit" onclick="playtool(this)">KELUAR</a></li>					
+		</ul>    
+    </div>
+    </div>
+		
+		    
+    
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+//On click sound
+function plays() {
+	var yes=document.getElementById("ok");
+	yes.play();
+}
+
+/*
+function playtool(mlm) {
+	var yes=document.getElementById("ok");
+	yes.play();
+	var lp=String(mlm);
+	pl=lp.split("#")[1];
+	//alert(pl);
+	$(document).on("pageshow",function (event) {
+		$(".ui-icon-"+pl).addClass("ui-btn-active");
+		alert(pl);
+	})
+	//$("#tools").toolbar("refresh");
+	
+}
+*/
+
+function metu() {	
+	navigator.app.exitApp();
+	var yes=document.getElementById("ok");
+	yes.play();
+}	
+function deflect() {
+	var no=document.getElementById("deflect");
+	no.play()
+}
+
+
+	//ball vector
+$('canvas').setLayer('vecx',{
+	visible:false,
+})
+
+$('canvas').setLayer('vecy',{
+	visible:false,
+})	
+
+var cwid=document.getElementById('sim').width;
+var chei=document.getElementById('sim').height;
+var xmin=-10;
+var ymin=-10;
+var xmax=290;
+var ymax=190;
+
+var cxnol=transx(0);
+var cynol=transy(0);
+
+var cxmax=transx(xmax);
+var cxmin=transx(xmin);
+
+var cymin=transy(ymin);
+var cymax=transy(ymax);
+
+var simpause="false";
+
+$("#menu").click(function () {
+	window.location.replace('#blank');
+});
+
+
+$('#sim').drawArc({
+		layer:true,
+		visibility:false,
+		name:'shade',
+		strokeStyle: 'Black',
+  		strokeWidth: 6,
+  		radius: 50,
+  // start and end angles in degrees
+  		start: 0, end: 360
+			
+	})
+
+$('#sim').drawRect({
+					layer:true,
+					fillStyle:'#2ecc71',
+					x:cxmin,
+					y:cynol,
+					width:cxmax,
+					height:cymin,
+					fromCenter: false
+				})
+$('#sim').drawRect({
+
+		layer:true,
+		fillStyle:'Skyblue',
+		x:cxmin, y:cymax,
+		width:cxmax, height:cynol,
+		fromCenter:false
+})
+//ball
+	$('#sim').drawImage({
+			layer:true,
+			name:'ball',
+			source:'ball.png',
+			x:transx(0), y:transy(0),
+			width:30, height:30
+			//draggable:true,
+			//restrictDragToAxis:'y'
+	})
+
+$('#sim').drawVector({
+	layer:true,
+	name:'vecx',
+	strokeStyle:'Black',
+	rounded:true,
+	endArrow:true,
+	arrowRadius: 5,
+ 	arrowAngle: 90,
+	visible:false,	
+	strokeWidth:3,
+  	x: 50, y: 50,
+  	a1: 90, l1: 190
+	
+})
+
+$('#sim').drawVector({
+	layer:true,
+	name:'vecy',
+	strokeStyle:'Black',
+	rounded:true,
+	endArrow:true,
+	arrowRadius: 5,
+ 	arrowAngle: 90,
+	visible:false,	
+	strokeWidth:3,
+  x: 50, y: 50,
+  a1: 90, l1: 100
+	
+})
+
+$('#sim').drawVector({
+	layer:true,
+	name:'vecr',
+	strokeStyle:'Black',
+	rounded:true,
+	endArrow:true,
+	arrowRadius: 5,
+ 	arrowAngle: 90,
+	visible:false,	
+	strokeWidth:3,
+  	x: 50, y: 50,
+  	a1: 90, l1: 190
+	
+})
+
+
+
+
+</script>
+
+<script src="soalbang.js"></script>

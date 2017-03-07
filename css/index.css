@@ -1,0 +1,332 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif, Dungeon;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+meter{
+    width: 80%;
+   border-radius: 5px; 
+    border: 1px gray solid;
+    background: none;
+    background-color: wheat;
+    box-shadow: 0 5px 5px -5px inset;
+}
+
+meter::-moz-meter-bar {
+    background: linear-gradient(to right,black,gray);
+    box-shadow: 0 5px 5px -5px inset;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+@keyframes bounce{
+    from { transform: translateY(0); }
+    30%  { transform: translateY(-20px); }
+    50%   { transform: translateY(0); }
+    60%  { transform: translateY(-20px); }
+    80%  { transform: translateY(0); }
+}
+
+.mentul{
+    animation:bounce 2000ms infinite;  
+    -webkit-animation: bounce 2000ms infinite;
+    -moz-animation: bounce 2000ms infinite;
+}
+
+
+.ui-icon-materi:after{
+    background-image: url("../ico/materi.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-simulasi:after{
+    background-image: url("../ico/simulasi.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-latihan:after{
+    background-image: url("../ico/latihan.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-about:after{
+    background-image: url("../ico/about.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-exit:after{
+    background-image: url("../ico/exit.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-play:after{
+    background-image: url("../ico/play.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-stop:after{
+    background-image: url("../ico/stop.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-pause:after{
+    background-image: url("../ico/pause.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-resume:after{
+    background-image: url("../ico/resume.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-yes:after{
+    background-image: url("../ico/yes.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-no:after{
+    background-image: url("../ico/delete.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-opa:after{
+    background-image: url("../ico/a.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-opb:after{
+    background-image: url("../ico/b.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-opc:after{
+    background-image: url("../ico/c.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-opd:after{
+    background-image: url("../ico/d.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-ope:after{
+    background-image: url("../ico/e.png"); 
+    background-size: 18px 18px;
+}
+.ui-icon-opmen:after{
+    background-image: url("../ico/open.png"); 
+    background-size: 16px 16px;
+}
+
+
+
+canvas{
+    width: 100%;
+    height: auto;
+    margin: 2% 1%;
+    
+}
+
+#simulasi{
+    text-align: center ;
+    font-size: smaller;
+}
+
+.ui-block-b meter{  
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.ui-block-b input{
+    display: none !important;
+}
+.ui-block-b .ui-slider {
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-top: -5%
+}
+#simulasi .ui-grid-b .ui-block-a{
+    margin-left: 3%;
+}
+#simulasi .ui-block-a button{
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#simulasi .ui-grid-solo{
+    font-size: smaller;
+}
+
+h4.ui-title{
+  font-size: smaller !important;
+}
+
+button.ui-nodisc-icon{
+   font-size: smaller;
+}
+.fr{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+video{
+    display: block;
+    margin: auto;
+}
+
+.bottom{
+    margin-bottom: 10%; 
+}
+
+.lis{
+    font-size: smaller;
+}
+
+.ui-panel .ui-btn{
+    font-size: 10px;
+  }
+.ui-panel h5{
+    margin-top:-4% 
+}
+
+.wrapper{
+   font-size: 12px; 
+}
+
+.ui-panel{
+  position:  fixed !important;
+    
+}
+
+.ui-listview li a.ui-btn{
+    font-size: inherit ;
+}
+.ui-header .ui-btn-left{
+    font-size: 10px !important;
+    border-radius: 5px;
+}
+.ui-header .ui-btn-icon-right{
+    padding-right: 5em;
+}
+
+.mate {
+    width: 100%;
+    margin: auto;
+}
+
+#about ul .ui-last-child{
+    margin-bottom: 15%;
+    
+}
+
+.option .ui-btn {
+    text-align: left;
+}
+
+.gamsoal{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.kumpsoal{
+    font-size: smaller;
+}
+
+#latihan .ui-btn {
+    width: 60%;
+    margin: 8% auto;
+    border: 3px solid black;
+    font-size:larger;
+}
+
+#exit .ui-btn-icon-left{
+    margin: auto;
+    border-radius: 5px;
+}
+#exit h2{
+    text-align: center;
+    color: #34495e
+}
+
+#blank .ui-grid-solo {
+    margin: 5%;
+    text-align: center;
+}
+
+#blank img{
+    margin: 40%;
+    height: 50px;
+}
