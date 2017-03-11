@@ -1,7 +1,7 @@
 for (a=1;a<=5;a++) {
 	
 
-document.write("<div data-role='page' id='sol"+a+"' data-dialog='true' class='dissoal'>"+
+document.write("<div id='sol"+a+"' data-role='dialog' class='dissoal'>"+
  	"<div data-role='header'><h4>Pertanyaan "+a+"</h4></div>"+
 			"<div data-role='main-content'>"+
 				"<div class='ui-grid-solo'>"+	

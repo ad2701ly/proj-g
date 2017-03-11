@@ -1,7 +1,7 @@
 for (a=1;a<=5;a++) {
 	
 
-document.write("<div data-role='page' id='sol"+a+"' data-dialog='true' class='dissoal'>"+
+document.write("<div data-role='page' id='sol"+a+"' data-role='dialog' class='dissoal'>"+
  	"<div data-role='header'><h4>Pertanyaan "+a+"</h4></div>"+
 			"<div data-role='main-content'>"+
 				"<div class='ui-grid-solo'>"+	
@@ -35,7 +35,7 @@ var c2=[
 ]
 
 var c3=[
-		["soal 1","pil1","pil2","pil3","pil4","pil5","kunci","img"],
+		["Dalam sebuah olimpiade lompat tinggi","pil1","pil2","pil3","pil4","pil5","kunci","img"],
 		["soal 2","pil1","pil2","pil3","pil4","pil5","kunci","img"],
 		["soal 3","pil1","pil2","pil3","pil4","pil5","kunci","img"],
 		["soal 4","pil1","pil2","pil3","pil4","pil5","kunci","img"],

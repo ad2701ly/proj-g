@@ -463,7 +463,7 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 	</div> 
     
     
-    <div data-role="footer" data-fullscreen="true" data-position="fixed">
+    <div data-role="footer" data-fullscreen="true" data-position="fixed" data-tap-toggle="false">
 		<div data-role="navbar" data-grid="d" >
 		<ul id="tools">
 			<li><a href="#materi" class="ui-state-persist ui-btn-icon-top ui-icon-materi" onclick="playtool(this)">MATERI</a></li>		
@@ -494,21 +494,20 @@ function plays() {
 	yes.play();
 }
 
-/*
+
 function playtool(mlm) {
 	var yes=document.getElementById("ok");
 	yes.play();
 	var lp=String(mlm);
 	pl=lp.split("#")[1];
 	//alert(pl);
-	$(document).on("pageshow",function (event) {
+	$(document).on("pagechange",function (event) {
 		$(".ui-icon-"+pl).addClass("ui-btn-active");
-		alert(pl);
 	})
 	//$("#tools").toolbar("refresh");
 	
 }
-*/
+
 
 function metu() {	
 	navigator.app.exitApp();
@@ -549,7 +548,7 @@ var cymax=transy(ymax);
 var simpause="false";
 
 $("#menu").click(function () {
-	window.location.replace('#blank');
+	window.location.replace('#howtouse');
 });
 
 
@@ -588,8 +587,8 @@ $('#sim').drawRect({
 			name:'ball',
 			source:'ball.png',
 			x:transx(0), y:transy(0),
-			width:30, height:30
-			//draggable:true,
+			width:30, height:30,
+			draggable: true,
 			//restrictDragToAxis:'y'
 	})
 
