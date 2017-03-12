@@ -5,24 +5,24 @@ $(document).on("pageshow", "#blank", function(event) {
 $(document).on("pagebeforeshow", "#howtouse", function(event) {		
   				$(".ui-footer").toolbar("hide");
 });
-		
 
-$(document).on("pagebeforeshow","#latihan", function (event) {
-			$(".ui-footer").toolbar("show");
-})		
+$(document).on("pagebeforeshow", "#petunjuk", function(event) {		
+  				$(".ui-footer").toolbar("hide");
+});
+
 		
-$(document).on("pagecreate","#sol1", function (event) {
+$(document).on("pagebeforeshow","#sol1", function (event) {
 			$(".ui-footer").toolbar("hide");
 		})
-$(document).on("pagecreate","#sol2", function (event) {
+$(document).on("pagebeforeshow","#sol2", function (event) {
 			$(".ui-footer").toolbar("hide");
 		})
-$(document).on("pagecreate","#sol3", function (event) {
+$(document).on("pagebeforeshow","#sol3", function (event) {
 			$(".ui-footer").toolbar("hide");
 })
-$(document).on("pagecreate","#sol4", function (event) {
+$(document).on("pagebeforeshow","#sol4", function (event) {
 			$(".ui-footer").toolbar("hide");
 })
-$(document).on("pagecreate","#sol5", function (event) {
+$(document).on("pagebeforeshow","#sol5", function (event) {
 			$(".ui-footer").toolbar("hide");
 })

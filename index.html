@@ -17,10 +17,7 @@
 	<script src='jcanvas.min.js'></script>
 	<script src="itungan.js">	</script>
 	<script src="MathJax.js?config=TeX-AMS-MML_HTMLorMML.js">	</script>
-	
-	
 
-	
 	<script>
 $(function() {
     	$( "[data-role='navbar']" ).navbar();
@@ -31,6 +28,7 @@ $(function() {
 			$( "body>[data-role='panel']" ).panel();
 			$( "[data-role='listview']").listview();
 		});
+
 		
 
 
@@ -78,7 +76,7 @@ $(function() {
 		<div data-role="main-content">
 			<div class="wrapper">
 			<ul data-role="listview">
-				<li>Setelah kalian tekan "close", kalian akan memasuki menu utama</li>
+				<li>Setelah kalian tekan "Saya mengerti dan tutup", kalian akan memasuki menu utama</li>
 				<li>Terdapat 5 menu yaitu:</li>
 					<ul><li>Materi: merupakan konsep dasar pembelajaran ini</li>
 						<li>Simulasi: sebuah gambaran yang menjiplak kenyataan</li>
@@ -168,12 +166,12 @@ $(function() {
 		</p>
 		<p class="bottom">Gerak dalam arah mendatar berlaku gerak lurus beraturan sehingga:<br>
 		  \[
-		  v_x=v_{ox}=v_o cos \alpha t
+		  v_x=v_{ox}=v_o cos \alpha_{o}
 		  \]
 		   
 		Gerak dalam arah vertikal berlaku gerak lurus berubah beraturan sehingga berlaku:<br>
 		  \[
-		  v_y=v_o sin \alpha - gt
+		  v_y=v_o sin \alpha_{o} - gt
 		  \]
 
 		 Resultan Kecepatan berlaku 
@@ -200,11 +198,11 @@ $(function() {
 		<p class="bottom">Gerak parabola merupakan perpaduan gerak lurus beraturan (GLB) pada arah horizontal atau sumbu X dan gerak lurus berubah beraturan (GLBB) pada arah vertikal atau sumbu Y.<br>
 		 Kecepatan awal pada sumbu X berlaku 
 		 \[
-		  v_{ox}=v_o cos \alpha_{o} t
+		  v_{ox}=v_o cos \alpha_{o}
 		  \]
 		 Kecepatan awal pada sumbu Y berlaku 
 		 \[
-		 v_{oy}=v_o sin \alpha_{o} t
+		 v_{oy}=v_o sin \alpha_{o}
 		 \]
 		 Resultan Kecepatan awal berlaku 
 		 \[
@@ -348,7 +346,7 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 						</div>						
 					</div>
 					<div class="ui-block-b" style="width:40%">
-						<div class="ui-grid-solo"><div class="ui-block-a" ><a href="#petunjuk" class="help ui-btn ui-btn-icon-right ui-icon-question ui-nodisc-icon ui-mini">Petunjuk Penggunaan</a></div></div>
+						<div class="ui-grid-solo"><div class="ui-block-a" ><a href="#petunjuk" class="help ui-btn ui-btn-icon-right ui-icon-question ui-nodisc-icon ui-mini" data-transition="slidedown">Petunjuk Penggunaan</a></div></div>
 						<div class="ui-grid-solo"><div class="ui-block-a" ><label for="v" >Kecepatan Awal (m/s):</label></div></div>
 						<div class="ui-grid-b">
 							<div class="ui-block-a" style="width: 10%">10</div>
@@ -382,7 +380,7 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 		</div>    
     </div>
     
-<div id="petunjuk" data-role='dialog'>
+<div id="petunjuk" data-role='dialog' data-close-btn="none">
  	<div data-role='header'><h4>Petunjuk Penggunaan</h4></div>
 			<div data-role='main-content'>
 			Berikut ini merupakan sekilas gambaran dari menu simulasi beserta penjelasannya
@@ -401,8 +399,8 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 							</ul></li>
 					<li>Layar simulasi : merupakan hasil dari "kontrol variabel simulasi" yang telah di atur. </li>
 					<li>Hasil kecepatan : merupakan perkiraan kecepatan yang terdapat pada simulasi dan diuraikan terhadap sumbunya. </li>
-				
 				</ol>
+				<a class="ui-btn ui-icon-yes ui-btn-icon-left" onclick="toolop()" data-rel="back">Saya mengerti petunjuk penggunaan simulasi</a>
 			</div> 
     </div>
    
@@ -452,7 +450,7 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 			<li ><img src="img/logo-gimp.png"><h3>GIMP</h3><p>&copy; 1995-2016 GIMP (GNU Image Manipulation Program). Spencer Kimball, Peter Mattis</p></li>
 			<li ><img src="img/mj.png"><h3>MathJax</h3><p>&copy; 2009-2017 The MathJax Team</p></li>
 			<li ><img src="img/audalogo.png"><h3>Audacity</h3><p>&copy; 2016 Dominic Mazzoni and The Audacity Team.</p></li>
-			<li ><h3>Profil Pengembang</h3><p>Dibuat oleh Satria Adhi Kusuma M. lahir di Sragen tahun 1992, sekarang sedang menyelesaikan masa studi S1 di pendidikan fisika Universitas Negeri Semarang</p></li>
+			<li ><img src="img/peng.jpeg"><h3>Profil Pengembang</h3><p>Dibuat oleh Satria Adhi Kusuma M. lahir di Sragen tahun 1992, sekarang sedang menyelesaikan masa studi S1 di pendidikan fisika Universitas Negeri Semarang</p></li>
 		</ul>		
 		
 		</div>    
@@ -535,7 +533,9 @@ function playtool(mlm) {
 	
 }
 
-
+function toolop() {
+	$(".ui-footer").toolbar("show");
+}
 
 function metu() {	
 	navigator.app.exitApp();

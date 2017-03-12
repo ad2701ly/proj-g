@@ -9,10 +9,10 @@ document.write("<div id='sol"+a+"' data-role='dialog' class='dissoal'>"+
 				"</div>"+
 				"<div class='ui-grid-a' >"+
 					"<div class='ui-block-a'><button id='pil"+a+"a' class='ui-btn ui-btn-icon-left ui-icon-opa ui-nodisc-icon' onclick='ans"+a+"(this)' data-rel='back'>Ya</button></div>"+				
-					"<div class='ui-block-b'><button id='pil"+a+"b' class='ui-btn ui-btn-icon-left ui-icon-opb ui-nodisc-icon' onclick='ans"+a+"(this)' data-rel='back'>Ya</button></div>"+		
-					"<div class='ui-block-a'><button id='pil"+a+"c' class='ui-btn ui-btn-icon-left ui-icon-opc ui-nodisc-icon' onclick='ans"+a+"(this)' data-rel='back'>Ya</button></div>"+			
 					"<div class='ui-block-b'><button id='pil"+a+"d' class='ui-btn ui-btn-icon-left ui-icon-opd ui-nodisc-icon' onclick='ans"+a+"(this)' data-rel='back'>Ya</button></div>"+		
-					"<div class='ui-block-a'><button id='pil"+a+"e' class='ui-btn-icon-left ui-icon-ope ui-nodisc-icon ui-btn' onclick='ans"+a+"(this)' data-rel='back'>Ya</button></div>"+	
+					"<div class='ui-block-a'><button id='pil"+a+"b' class='ui-btn ui-btn-icon-left ui-icon-opb ui-nodisc-icon' onclick='ans"+a+"(this)' data-rel='back'>Ya</button></div>"+			
+					"<div class='ui-block-b'><button id='pil"+a+"e' class='ui-btn ui-btn-icon-left ui-icon-ope ui-nodisc-icon' onclick='ans"+a+"(this)' data-rel='back'>Ya</button></div>"+		
+					"<div class='ui-block-a'><button id='pil"+a+"c' class='ui-btn-icon-left ui-icon-opc ui-nodisc-icon ui-btn' onclick='ans"+a+"(this)' data-rel='back'>Ya</button></div>"+	
 				"</div>"+
 			"</div>"+    
     "</div>")
@@ -36,7 +36,7 @@ var c2=[
 
 var c3=[
 		["Dalam sebuah olimpiade lompat tinggi","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["soal 2","pil1","pil2","pil3","pil4","pil5","kunci","img"],
+		["Seorangh <i>stuntman</i>","pil1","pil2","pil3","pil4","pil5","kunci","img",'soalimg/jack.gif'],
 		["soal 3","pil1","pil2","pil3","pil4","pil5","kunci","img"],
 		["soal 4","pil1","pil2","pil3","pil4","pil5","kunci","img"],
 		["soal 5","pil1","pil2","pil3","pil4","pil5","kunci","img"],
@@ -106,6 +106,7 @@ if (jaw1==true) {
  window.location.replace("#latihan");
  $('#soal1').addClass('ui-disabled');
  $('.answer1').append('<br>terjawab')
+			$(".ui-footer").toolbar("show");
 }
 }
 //============================button 2 func===============
@@ -122,6 +123,7 @@ if (jaw2==true) {
  window.location.replace("#latihan");
  $('#soal2').addClass('ui-disabled');
  $('.answer2').append('<br>terjawab')
+			$(".ui-footer").toolbar("show");
 }
 }
 //============================button 3 func===============
@@ -138,6 +140,7 @@ if (jaw3==true) {
  window.location.replace("#latihan");
  $('#soal3').addClass('ui-disabled');
  $('.answer3').append('<br>terjawab')
+			$(".ui-footer").toolbar("show");
 }
 }
 //============================button 4 func===============
@@ -155,12 +158,12 @@ if (jaw4==true) {
  window.location.replace("#latihan");
  $('#soal4').addClass('ui-disabled');
  $('.answer4').append('<br>terjawab')
+			$(".ui-footer").toolbar("show");
 }
 }
 //============================button 5 func===============
 
 function ans5(click5) {
-
 var jaw5=confirm("Apa kamu yakin dengan jawabanmu?");
 if (jaw5==true) {
  	if (click5.value==c5[0][6]) {
@@ -172,5 +175,8 @@ if (jaw5==true) {
  window.location.replace("#latihan");
  $('#soal5').addClass('ui-disabled');
  $('.answer5').append('<br>terjawab')
+
+			$(".ui-footer").toolbar("show");
+	
 }
 }
