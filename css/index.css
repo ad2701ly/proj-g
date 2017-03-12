@@ -188,6 +188,11 @@ h1 {
     background-size: 16px 16px;
 }
 
+.ui-icon-question:after{
+    background-image: url("../ico/question.png"); 
+    background-size: 16px 16px;
+}
+
 
 
 canvas{
@@ -225,6 +230,25 @@ canvas{
 }
 #simulasi .ui-grid-solo{
     font-size: smaller;
+}
+#simulasi .ui-nodisc-icon{
+    margin-left: 5%;
+    width:90%;
+    border-radius: 7px;
+}
+
+#simulasi .help {
+    margin: 5%;
+    font-size: smaller;
+    width: 60%;
+    float: right;
+}
+#petunjuk{
+    font-size: smaller;
+}
+
+#petunjuk img{
+    width: 70%;
 }
 
 h4.ui-title{

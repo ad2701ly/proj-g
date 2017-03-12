@@ -36,7 +36,7 @@ var c2=[
 
 var c3=[
 		["Dalam sebuah olimpiade lompat tinggi","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["soal 2","pil1","pil2","pil3","pil4","pil5","kunci","img"],
+		["Seorangh <i>stuntman</i>","pil1","pil2","pil3","pil4","pil5","kunci","img",'soalimg/jack.gif'],
 		["soal 3","pil1","pil2","pil3","pil4","pil5","kunci","img"],
 		["soal 4","pil1","pil2","pil3","pil4","pil5","kunci","img"],
 		["soal 5","pil1","pil2","pil3","pil4","pil5","kunci","img"],

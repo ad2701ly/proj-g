@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 
 <html>
 
@@ -348,6 +348,7 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 						</div>						
 					</div>
 					<div class="ui-block-b" style="width:40%">
+						<div class="ui-grid-solo"><div class="ui-block-a" ><a href="#petunjuk" class="help ui-btn ui-btn-icon-right ui-icon-question ui-nodisc-icon ui-mini">Petunjuk Penggunaan</a></div></div>
 						<div class="ui-grid-solo"><div class="ui-block-a" ><label for="v" >Kecepatan Awal (m/s):</label></div></div>
 						<div class="ui-grid-b">
 							<div class="ui-block-a" style="width: 10%">10</div>
@@ -363,15 +364,15 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 						</div>
 							<div class="ui-grid-solo">Perkiraan Kecepatan bola yang telah diuraikan terhadap sumbunya</div>
 							<div class="ui-grid-c" style="margin-left: 3%;margin-top: 3%">																		
-								<div class="ui-block-a" style="width: 10%">Vx :</div>
+								<div class="ui-block-a" style="width: 15%">Vx :</div>
 								<div class="ui-block-b" style="width: 5%">0</div>
 								<div class="ui-block-c" style="width: 70%"><meter min="0" id="vxm" max="50"></meter></div>
 								<div class="ui-block-d" style="width: 7%">50</div>
-								<div class="ui-block-a" style="width: 10%">Vy :</div>
+								<div class="ui-block-a" style="width: 15%">Vy :</div>
 								<div class="ui-block-b" style="width: 5%">0</div>
 								<div class="ui-block-c" style="width: 70%"><meter min="0" id="vym" max="50"></meter></div>
 								<div class="ui-block-d" style="width: 7%">50</div>
-								<div class="ui-block-a" style="width: 10%">Vr :</div>
+								<div class="ui-block-a" style="width: 15%">Vr :</div>
 								<div class="ui-block-b" style="width: 5%">0</div>
 								<div class="ui-block-c" style="width: 70%"><meter min="0" id="vrm" max="50"></meter></div>
 								<div class="ui-block-d" style="width: 7%">50</div>							
@@ -380,6 +381,32 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 				</div>		
 		</div>    
     </div>
+    
+<div id="petunjuk" data-role='dialog'>
+ 	<div data-role='header'><h4>Petunjuk Penggunaan</h4></div>
+			<div data-role='main-content'>
+			Berikut ini merupakan sekilas gambaran dari menu simulasi beserta penjelasannya
+				<div class='ui-grid-solo'>	
+					<div class='ui-block-a'><img src="img/tutor.png" class="gamsoal"></div>
+				</div>
+				<ol>
+					<li>Petunjuk penggunaan : digunakan untuk menampilkan halaman bantuan ini</li>
+					<li>Kontrol variabel simulasi : digunakan untuk kecapatan dan sudut tembak pada simulasi</li>
+					<li>Tombol kontrol : terdapat empat tombol, masing-masing berfungsi sebagai berikut:
+							<ul>
+								<li>Mulai : Digunakan untuk memulai simulasi</li>							
+								<li>Jeda : Digunakan untuk menjeda simulasi</li>							
+								<li>Lanjutkan : Digunakan untuk melanjutkan simulasi yang sebelumnya dijeda</li>							
+								<li>Berhenti : Digunakan untuk memberhentikan simulasi dan reset posisi semula</li>							
+							</ul></li>
+					<li>Layar simulasi : merupakan hasil dari "kontrol variabel simulasi" yang telah di atur. </li>
+					<li>Hasil kecepatan : merupakan perkiraan kecepatan yang terdapat pada simulasi dan diuraikan terhadap sumbunya. </li>
+				
+				</ol>
+			</div> 
+    </div>
+   
+    
     
     <div data-role="page" id="latihan">
 		<div data-role="header"><h4>Latihan</h4></div>   
@@ -509,6 +536,7 @@ function playtool(mlm) {
 }
 
 
+
 function metu() {	
 	navigator.app.exitApp();
 	var yes=document.getElementById("ok");
@@ -587,9 +615,7 @@ $('#sim').drawRect({
 			name:'ball',
 			source:'ball.png',
 			x:transx(0), y:transy(0),
-			width:30, height:30,
-			draggable: true,
-			//restrictDragToAxis:'y'
+			width:30, height:30
 	})
 
 $('#sim').drawVector({
