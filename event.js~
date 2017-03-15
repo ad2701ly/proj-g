@@ -11,18 +11,22 @@ $(document).on("pagebeforeshow", "#petunjuk", function(event) {
 });
 
 		
-$(document).on("pageshow","#sol1", function (event) {
+$(document).on("pagebeforeshow","#sol1", function (event) {
 			$(".ui-footer").toolbar("hide");
 		})
-$(document).on("pageshow","#sol2", function (event) {
+$(document).on("pagebeforeshow","#sol2", function (event) {
 			$(".ui-footer").toolbar("hide");
 		})
-$(document).on("pageshow","#sol3", function (event) {
+$(document).on("pagebeforeshow","#sol3", function (event) {
 			$(".ui-footer").toolbar("hide");
 })
-$(document).on("pageshow","#sol4", function (event) {
+$(document).on("pagebeforeshow","#sol4", function (event) {
 			$(".ui-footer").toolbar("hide");
 })
-$(document).on("pageshow","#sol5", function (event) {
+$(document).on("pagebeforeshow","#sol5", function (event) {
 			$(".ui-footer").toolbar("hide");
+})
+
+$(document).on("pagebeforehide","#sol5", function (event) {
+			$(".ui-footer").toolbar("show");
 })

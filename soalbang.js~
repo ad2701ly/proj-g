@@ -22,8 +22,8 @@ var c1=[
 		["Berapakah kecepatan benda saat berada pada titik tertinggi? ","Sebesar Vx","Nol","Sebesar Vo","Sebesar Vy","Tidak ada jawabannya","Sebesar Vx"],
 		["Dalam gerak peluru kecepatan pada arah sumbu x adalah...","Dipercepat","Konstan","Diperlambat","Nol","Dipercepat dan diperlambat","Konstan"],
 		["Dalam gerak peluru kecepatan pada arah sumbu y adalah...","Konstan","Dipercepat","Diperlambat","Nol","Dipercepat dan diperlambat","Dipercepat dan diperlambat"],
-		["Perhatikan macam-macam olahraga berikut:<br><ol><li>Voli</li><li>Ping Pong</li><li>Berenang</li><li>Balap lari</li></ol>Pemanfaatan gerak peluru ada pada nomor?","1,3","2,4","1,2","3,4","1,4","1,2"],
-		["<ol><li>Kecepatan</li><li>Arah tembak</li><li>Gaya gravitasi</li><li>Hanya 1 dan 2</li></ol>Besaran mana saja yang mempengaruhi gerak peluru?","1 benar","2 benar","1 dan 3 benar","1,2 dan 3 benar","4 benar","kunci"],
+		["Dalam gerak peluru kecepatan pada arah sumbu x adalah...","Dipercepat","Konstan","Diperlambat","Nol","Dipercepat dan diperlambat","Konstan"],
+		["Dalam gerak peluru kecepatan pada arah sumbu y adalah...","Konstan","Dipercepat","Diperlambat","Nol","Dipercepat dan diperlambat","Dipercepat dan diperlambat"],
 ]
 
 var c2=[
@@ -35,9 +35,9 @@ var c2=[
 ]
 
 var c3=[
-		["Dalam sebuah olimpiade lompat tinggi","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["Seorangh <i>stuntman</i>","pil1","pil2","pil3","pil4","pil5","kunci","img",'soalimg/jack.gif'],
-		["soal 3","pil1","pil2","pil3","pil4","pil5","kunci","img"],
+		["Dalam permainana darts","pil1","pil2","pil3","pil4","pil5","kunci","img"],
+		["Seoranng <i>stuntman</i>","pil1","pil2","pil3","pil4","pil5","kunci","img",'soalimg/jack.gif'],
+		["Seorang penembak meriam bersiap untuk menembak sasaran yang berjarak 2 km, jika dikatahui kecapatan penembak meriam adalah 200 m/s, maka penembak tersebut harus mengatur sudut tembakan sebesar...","10<sup>O</sup>","15<sup>O</sup>","30<sup>O</sup>","45<sup>O</sup>","60<sup>O</sup>","15<sup>O</sup>"],
 		["soal 4","pil1","pil2","pil3","pil4","pil5","kunci","img"],
 		["soal 5","pil1","pil2","pil3","pil4","pil5","kunci","img"],
 ]
@@ -51,13 +51,12 @@ var c4=[
 ]
 
 var c5=[
-		["soal 1","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["soal 2","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["soal 3","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["soal 4","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["soal 5","pil1","pil2","pil3","pil4","pil5","kunci","img"],
+		["Seorang <i>stuntman</i> akan melakukan adegan seperti pada gambar diatas, dengan ketentuan jarak antara saat mobil lepas landas dan bagian belakang kapal adalah 2000 meter, sedangkan bagian loncatan membentuk sudut 45<sup>O</sup>, beda ketinggian saat mobil lepas landas dan kapal adalah 20 m, berapakah kecepatan minimal mobil agar mendarat sampai di kapal?","pil1","pil2","pil3","pil4","pil5","kunci","img","soalimg/ps4.gif"],
+		["Seorang <i>stuntman</i> akan melakukan adegan seperti pada gambar diatas, dengan ketentuan jarak antara saat mobil lepas landas dan bagian belakang kapal adalah 2000 meter, sedangkan bagian loncatan membentuk sudut 45<sup>O</sup>, beda ketinggian saat mobil lepas landas dan kapal adalah 20 m, berapakah kecepatan minimal mobil agar mendarat sampai di kapal?","pil1","pil2","pil3","pil4","pil5","kunci","img","soalimg/ps4.gif"],
+		["Seorang <i>stuntman</i> akan melakukan adegan seperti pada gambar diatas, dengan ketentuan jarak antara saat mobil lepas landas dan bagian belakang kapal adalah 2000 meter, sedangkan bagian loncatan membentuk sudut 45<sup>O</sup>, beda ketinggian saat mobil lepas landas dan kapal adalah 20 m, berapakah kecepatan minimal mobil agar mendarat sampai di kapal?","pil1","pil2","pil3","pil4","pil5","kunci","img","soalimg/ps4.gif"],
+		["Seorang <i>stuntman</i> akan melakukan adegan seperti pada gambar diatas, dengan ketentuan jarak antara saat mobil lepas landas dan bagian belakang kapal adalah 2000 meter, sedangkan bagian loncatan membentuk sudut 45<sup>O</sup>, beda ketinggian saat mobil lepas landas dan kapal adalah 20 m, berapakah kecepatan minimal mobil agar mendarat sampai di kapal?","pil1","pil2","pil3","pil4","pil5","kunci","img","soalimg/ps4.gif"],
+		["Seorang <i>stuntman</i> akan melakukan adegan seperti pada gambar diatas, dengan ketentuan jarak antara saat mobil lepas landas dan bagian belakang kapal adalah 2000 meter, sedangkan bagian loncatan membentuk sudut 45<sup>O</sup>, beda ketinggian saat mobil lepas landas dan kapal adalah 20 m, berapakah kecepatan minimal mobil agar mendarat sampai di kapal?","pil1","pil2","pil3","pil4","pil5","kunci","img","soalimg/ps4.gif"],
 ]
-
 var pi=[1,2,3,4,5];
 var bon=[1,2,3,4];
 shuffle(pi);

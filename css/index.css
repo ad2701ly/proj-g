@@ -354,3 +354,9 @@ video{
     margin: 40%;
     height: 50px;
 }
+
+.center{
+    display: block;
+    margin: auto;
+    text-align: center;
+}

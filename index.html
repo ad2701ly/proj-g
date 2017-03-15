@@ -30,7 +30,7 @@ $(function() {
 		});
 
 		
-
+MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter",{ transition: "none"})});
 
 	</script>
 	<script src="event.js"></script>
@@ -38,7 +38,21 @@ $(function() {
 </head>
 
 <body>
-    <div data-role="page" id="menu" data-fullscreen="true">
+    <div data-role="page" data-fullscreen="true">
+		    
+		<div data-role="main-content" >
+			<div class="ui-grid-solo center">
+				<div class="ui-block-a"><img src="img/gp.png" class="fr" alt="" width="300"></div>
+				<div class="ui-block-a"><progress id="prog"></progress></div>
+				<div class="ui-block-a">Loading MathJax.....</div>
+				
+			</div>		
+		</div>
+		    
+		    
+    </div>
+    
+    <div data-role="page" id="inter" data-fullscreen="true">
 		    
 		<div data-role="main-content" >
 			<div class="ui-grid-solo">
@@ -79,7 +93,7 @@ $(function() {
 				<li>Setelah kalian tekan "Saya mengerti dan tutup", kalian akan memasuki menu utama</li>
 				<li>Terdapat 5 menu yaitu:</li>
 					<ul><li>Materi: merupakan konsep dasar pembelajaran ini</li>
-						<li>Simulasi: sebuah gambaran yang menjiplak kenyataan</li>
+						<li>Simulasi: merupakan tiruan dari sesuatu yang bisa kita atur keadaannya</li>
 						<li>Latihan: digunakan untuk mengukur sejauh mana kemampuan kalian</li>
 						<li>Tentang: merupakan daftar aplikasi yang terlibat dalam pembuatan aplikasi ini</li>
 						<li>Keluar: digunakan untuk keluar dari program</li></ul>
@@ -224,11 +238,11 @@ $(function() {
 	<div class="wrapper">
 <p class="bottom">Gerak dalam arah horizontal:<br>
 \[
-x=v_{ox}t=(v_o cos \alpha) t
+x=v_{ox}t=(v_o cos \alpha_{o}) t
 \]
 		gerak dalam arah vertikal:<br>
 \[
-y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
+y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha_{o}) t - \frac{1}{2} gt^2
 \]		 		 
 		 Besar perpindahan, 
 		 \[
@@ -254,13 +268,13 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 		v_y=0
 		\]
 		\[
-		v_o sin \alpha -gt =0
+		v_o sin \alpha_{o} -gt =0
 		\]
 		\[
-		v_o sin \alpha = gt
+		v_o sin \alpha_{o} = gt
 		\]
 		\[
-		t_{ymax} = {v_o sin \alpha \over g}
+		t_{ymax} = {v_o sin \alpha_{o} \over g}
 		\]
 	
 		
@@ -269,16 +283,16 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 		y_{max} = v_{oy} t_{ymax} - \frac{1}{2} gt_{ymax}^2
 		\]
 		\[
-		y_{max}= (v_o sin \alpha) t_{ymax} - \frac{1}{2}gt_{ymax}^2
+		y_{max}= (v_o sin \alpha_{o}) t_{ymax} - \frac{1}{2}gt_{ymax}^2
 		\]
 		\[
-		y_{max} = (v_o sin \alpha) {\left (v_o sin \alpha \over g \right)} - \frac{1}{2}g{\left (v_o sin \alpha \over g \right)}^2
+		y_{max} = (v_o sin \alpha_{o}) {\left (v_o sin \alpha_{o} \over g \right)} - \frac{1}{2}g{\left (v_o sin \alpha_{o} \over g \right)}^2
 		\]
 		\[
-		y_{max} = {v_o^2 sin^2 \alpha \over g} - {v_o^2 sin^2 \alpha \over 2g}
+		y_{max} = {v_o^2 sin^2 \alpha_{o} \over g} - {v_o^2 sin^2 \alpha_{o} \over 2g}
 		\]
 		\[
-		y_{max} = {v_o^2 sin^2 \alpha \over 2g}
+		y_{max} = {v_o^2 sin^2 \alpha_{o} \over 2g}
 		\]
 		  
 		  Keterangan :
@@ -304,24 +318,24 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha) t - \frac{1}{2} gt^2
 		t_{xmax} = 2t_{ymax}
 		\]		
 		\[
-		t_{xmax} = {2v_o sin \alpha \over g}
+		t_{xmax} = {2v_o sin \alpha_{o} \over g}
 		\]		
 		keterangan:<br>		
 		t<sub>xmax</sub>	 = waktu yang diperlukan untuk mencapai jarak jangkauan (x<sub>max</sub>) <br>
 		
 		<p class="bottom">Substitusi nilai t <sub>xmax</sub> ke persamaan posisi benda setiap saat:<br>
 		\[
-		x_{max}=(v_o cos \alpha) t_{max}		
+		x_{max}=(v_o cos \alpha_{o}) t_{max}		
 		\]
 		\[
-		x_{max} = (v_o cos \alpha) { \left (2v_o sin \alpha \over g \right)}
+		x_{max} = (v_o cos \alpha_{o}) { \left (2v_o sin \alpha_{o} \over g \right)}
 		\]
 		\[
-		x_{max} = {v_o^2 (2 cos \alpha sin \alpha) \over g}
+		x_{max} = {v_o^2 (2 cos \alpha_{o} sin \alpha_{o}) \over g}
 		\]
 		Menurut rumus trigonometri, 2 sin &alpha; cos &alpha; = sin 2&alpha;, sehingga:<br>		  
 		\[
-		x_{max} = {v_o^2 sin 2 \alpha \over g}
+		x_{max} = {v_o^2 sin 2 \alpha_{o} \over g}
 		\]  
 		
 		 
@@ -575,7 +589,7 @@ var cymax=transy(ymax);
 
 var simpause="false";
 
-$("#menu").click(function () {
+$("#inter").click(function () {
 	window.location.replace('#howtouse');
 });
 

@@ -26,3 +26,20 @@ $(document).on("pagebeforeshow","#sol4", function (event) {
 $(document).on("pagebeforeshow","#sol5", function (event) {
 			$(".ui-footer").toolbar("hide");
 })
+
+$(document).on("pagebeforehide","#sol1", function (event) {
+			$(".ui-footer").toolbar("show");
+})
+$(document).on("pagebeforehide","#sol2", function (event) {
+			$(".ui-footer").toolbar("show");
+})
+$(document).on("pagebeforehide","#sol3", function (event) {
+			$(".ui-footer").toolbar("show");
+})
+$(document).on("pagebeforehide","#sol4", function (event) {
+			$(".ui-footer").toolbar("show");
+})
+
+$(document).on("pagebeforehide","#sol5", function (event) {
+			$(".ui-footer").toolbar("show");
+})
