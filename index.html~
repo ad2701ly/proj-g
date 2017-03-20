@@ -93,7 +93,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 				<li>Setelah kalian tekan "Saya mengerti dan tutup", kalian akan memasuki menu utama</li>
 				<li>Terdapat 5 menu yaitu:</li>
 					<ul><li>Materi: merupakan konsep dasar pembelajaran ini</li>
-						<li>Simulasi: sebuah tiruan dari sesuatu yang nyata beserta keadaan sekelilingnya</li>
+						<li>Simulasi: merupakan tiruan dari sesuatu yang bisa kita atur keadaannya</li>
 						<li>Latihan: digunakan untuk mengukur sejauh mana kemampuan kalian</li>
 						<li>Tentang: merupakan daftar aplikasi yang terlibat dalam pembuatan aplikasi ini</li>
 						<li>Keluar: digunakan untuk keluar dari program</li></ul>
@@ -179,9 +179,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		<img src="img/kecses.png" class="mate">				
 		</p>
 		<p class="bottom">Gerak dalam arah mendatar berlaku gerak lurus beraturan sehingga:<br>
-		  \[
-		  v_x=v_{ox}=v_o cos \alpha_{o}
-		  \]
+		  \[ v_x=v_{ox}=v_o cos \alpha_{o} \]
 		   
 		Gerak dalam arah vertikal berlaku gerak lurus berubah beraturan sehingga berlaku:<br>
 		  \[
