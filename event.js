@@ -10,6 +10,15 @@ $(document).on("pagebeforeshow", "#petunjuk", function(event) {
   				$(".ui-footer").toolbar("hide");
 });
 
+$(document).on("pagebeforeshow", "#simulasi", function(event) {		
+  				sh=setInterval(update,1000/30);
+});
+
+$(document).on("pagehide", "#simulasi", function(event) {		
+  				clearInterval(sh);
+});
+
+
 		
 $(document).on("pagebeforeshow","#sol1", function (event) {
 			$(".ui-footer").toolbar("hide");

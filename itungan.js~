@@ -1,6 +1,5 @@
 function puse() {
-	simpause="true";
-	clearInterval(sh);
+jeda=0;
 }
 
 //Fisher-yates shuffle
@@ -23,8 +22,7 @@ function shuffle(array) {
 }
 
 function res() {
-	simpause="false";
-	timer();
+	jeda=0.1;
 }
 function deg2rad (sud){
 	var rad=sud*Math.PI/180;
@@ -55,21 +53,15 @@ function start() {
 	jeda=0.1;
 	vx=Math.round(v*Math.cos(deg2rad(sud)));
 	vy=Math.round(v*Math.sin(deg2rad(sud)));
-	bounce=0;
-	simpause="false";	
-	
-	timer();
 	
 
 	//alert("vx = "+ vx+"; vy = "+vy+"; sudut = "+sud)
 }
 
-function timer() {
-//clearInterval(sh);
-		sh=setInterval(update,1000/30);
-}
+
+		
 function rese() {
-	clearInterval(sh);		 
+jeda=0;		 
 	
 	$('canvas').setLayer('ball',{
 	x:cxnol, y:cynol
@@ -79,7 +71,6 @@ function rese() {
 function update() {
 //ball vector
 
-if (simpause!="true") {
 $('canvas').setLayer('vecx',{
 	visible:true,
 	x:transx(s), y:transy(h),
@@ -114,13 +105,14 @@ $('#sim').setLayer('ball',{
 
 	//update t
 	
-	Math.round((t+=jeda)*100)/100;	
+	t+=jeda;	
+	t=Math.round(t*100)/100;	
 	
 	//update s & h
 	s+=vx*jeda;
-	Math.round(s*100)/100;
+	s=Math.round(s*100)/100;
 	h+=vy*jeda;
-	Math.round(h*100)/100;
+	h=Math.round(h*100)/100;
 	
 	//update vx & vy & vr
 	vy-=grav*jeda;
@@ -152,26 +144,9 @@ for (m=0;m<=t;m++) {
 		x:transx(v*Math.cos(deg2rad(sud))*m), 
 		y:transy(v*Math.sin(deg2rad(sud))*m-(grav*m*m/2)),
 		radius:15,
-		})
-/*		
-		$('#balx').drawArc({
-		strokeStyle:'Black',
-		x:transx(v*Math.cos(deg2rad(sud))*m), 
-		y:15,
-		radius:13,
 
-		})
-		
-		$('#baly').drawArc({
-		strokeStyle:'Black',
-		x:15, 
-		y:transy(v*Math.sin(deg2rad(sud))*m-(grav*m*m/2)),
-		radius:13,
-
-		})
-*/
 	
-	}
+	})
 
 	
 }	

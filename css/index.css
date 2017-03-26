@@ -314,6 +314,10 @@ video{
     
 }
 
+#about img{
+   width: 100%;
+}
+
 .option .ui-btn {
     text-align: left;
 }

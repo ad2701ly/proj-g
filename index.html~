@@ -182,9 +182,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		  \[ v_x=v_{ox}=v_o cos \alpha_{o} \]
 		   
 		Gerak dalam arah vertikal berlaku gerak lurus berubah beraturan sehingga berlaku:<br>
-		  \[
-		  v_y=v_o sin \alpha_{o} - gt
-		  \]
+		  \[ v_y=v_o sin \alpha_{o} - gt \]
 
 		 Resultan Kecepatan berlaku 
 		 		 \[
@@ -359,13 +357,13 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha_{o}) t - \frac{1}{2} gt^2
 					</div>
 					<div class="ui-block-b" style="width:40%">
 						<div class="ui-grid-solo"><div class="ui-block-a" ><a href="#petunjuk" class="help ui-btn ui-btn-icon-right ui-icon-question ui-nodisc-icon ui-mini" data-transition="slidedown">Petunjuk Penggunaan</a></div></div>
-						<div class="ui-grid-solo"><div class="ui-block-a" ><label for="v" >Kecepatan Awal (m/s):</label></div></div>
+						<div class="ui-grid-solo"><div class="ui-block-a" style="font-size:smaller;"><label for="v" >Kecepatan Awal (m/s):</label></div></div>
 						<div class="ui-grid-b">
 							<div class="ui-block-a" style="width: 10%">10</div>
 							<div class="ui-block-b" style="width: 75%"><input name="v" id="v" min="10" max="50" step="1" type="range" value="10" data-popup-enabled="true" data-highlight="true" data-mini="true"></div>
 							<div class="ui-block-c" style="width: 10%">50</div>
 						</div>
-						<div class="ui-grid-solo"><div class="ui-block-a" ><label for="sud" >Sudut Awal (<sup>o</sup>):</label></div></div>
+						<div class="ui-grid-solo"><div class="ui-block-a" style="font-size:smaller;"><label for="sud" >Sudut Awal (<sup>o</sup>):</label></div></div>
 						<div class="ui-grid-b">
 							<div class="ui-block-a" style="width: 10%">10</div>
 							<div class="ui-block-b" style="width: 75%"><input name="sud" id="sud" min="10" max="90" step="1" type="range"  data-popup-enabled="true" data-highlight="true" value="10" data-mini="true"></div>
@@ -462,7 +460,7 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha_{o}) t - \frac{1}{2} gt^2
 			<li ><img src="img/logo-gimp.png"><h3>GIMP</h3><p>&copy; 1995-2016 GIMP (GNU Image Manipulation Program). Spencer Kimball, Peter Mattis</p></li>
 			<li ><img src="img/mj.png"><h3>MathJax</h3><p>&copy; 2009-2017 The MathJax Team</p></li>
 			<li ><img src="img/audalogo.png"><h3>Audacity</h3><p>&copy; 2016 Dominic Mazzoni and The Audacity Team.</p></li>
-			<li ><img src="img/peng.jpeg"><h3>Profil Pengembang</h3><p>Dibuat oleh Satria Adhi Kusuma M. lahir di Sragen tahun 1992, sekarang sedang menyelesaikan masa studi S1 di pendidikan fisika Universitas Negeri Semarang</p></li>
+			<li ><a href="#"><img src="img/peng.jpeg"><h3>Profil Pengembang</h3><p>Lihat Selengkapnya</p></a></li>
 		</ul>		
 		
 		</div>    
@@ -585,7 +583,21 @@ var cxmin=transx(xmin);
 var cymin=transy(ymin);
 var cymax=transy(ymax);
 
-var simpause="false";
+t=0; 
+h=0;
+s=0;
+grav=9.8;
+jeda=0.1;
+vx=0;
+vy=0;
+	
+
+var sx=[];
+var sy=[];
+var sgx=[];
+var sgy=[];
+
+sh=setInterval(update,1000/30);
 
 $("#inter").click(function () {
 	window.location.replace('#howtouse');
