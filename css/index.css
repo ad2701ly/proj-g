@@ -151,6 +151,10 @@ h1 {
     background-image: url("../ico/pause.png"); 
     background-size: 18px 18px;
 }
+.ui-icon-reset:after{
+    background-image: url("../ico/reset.png"); 
+    background-size: 18px 18px;
+}
 .ui-icon-resume:after{
     background-image: url("../ico/resume.png"); 
     background-size: 18px 18px;
@@ -220,22 +224,19 @@ canvas{
     vertical-align: middle;
     margin-top: -5%
 }
-#simulasi .ui-grid-b .ui-block-a{
-    margin-left: 3%;
-}
-#simulasi .ui-block-a button{
+
+#simulasi .control{
     font-size: 10px;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-left: 5px;
+   
+}
+#simulasi label{
+    font-size: small;
 }
 #simulasi .ui-grid-solo{
     font-size: smaller;
 }
-#simulasi .ui-nodisc-icon{
-    margin-left: 5%;
-    width:90%;
-    border-radius: 7px;
-}
+
 
 #simulasi .help {
     margin: 5%;

@@ -2,6 +2,24 @@ function puse() {
 jeda=0;
 }
 
+function cleant() {
+	$('#sim').setLayer('ball',{
+	x:cxnol, y:cynol
+})
+.drawLayers();
+
+va=[];
+suda=[];
+v=0;
+sud=0;
+jeda=0;
+t=0;
+vx=0;
+vy=0;
+s=0
+h=0;
+}
+
 //Fisher-yates shuffle
 function shuffle(array) {
   var m = array.length, t, i;
@@ -42,6 +60,13 @@ function transy (yc){
 	return yl;
 }
 
+function tbmax(v,sud) {
+	var tmax=2*(v*Math.sin(deg2rad(sud)))/(9.8);
+	return tmax;
+}
+
+
+
 function start() {
 	
 	v=document.getElementById('v').value;
@@ -53,8 +78,8 @@ function start() {
 	jeda=0.1;
 	vx=Math.round(v*Math.cos(deg2rad(sud)));
 	vy=Math.round(v*Math.sin(deg2rad(sud)));
-	
-
+	va.push(v);
+	suda.push(sud);
 	//alert("vx = "+ vx+"; vy = "+vy+"; sudut = "+sud)
 }
 
@@ -66,6 +91,7 @@ jeda=0;
 	$('canvas').setLayer('ball',{
 	x:cxnol, y:cynol
 	})
+	.drawLayers();
 }
 
 function update() {
@@ -124,7 +150,7 @@ $('#sim').setLayer('ball',{
 			//vx=0;
 			//vy=0;
 			//vr=0;
-			clearInterval(sh);
+			jeda=0;
 			
 
 	}
@@ -144,11 +170,24 @@ for (m=0;m<=t;m++) {
 		x:transx(v*Math.cos(deg2rad(sud))*m), 
 		y:transy(v*Math.sin(deg2rad(sud))*m-(grav*m*m/2)),
 		radius:15,
-
-	
-	})
-
-	
+	})	
 }	
+
+// Lintasan
+if (va.length>1 && suda.length>1) {
+	for (i=va.length-2;i<va.length-1;i++) {
+	for (loc=0;loc<=tbmax(va[i],suda[i]);loc++) {
+		$('#sim').drawArc({
+		strokeStyle:'Black',
+		strokeWidth:'5',
+		x:transx(va[i]*Math.cos(deg2rad(suda[i]))*loc), 
+		y:transy(va[i]*Math.sin(deg2rad(suda[i]))*loc-(grav*loc*loc/2)),
+		radius:15,
+	})
+	}
+	}
+}
+
+
 
 }

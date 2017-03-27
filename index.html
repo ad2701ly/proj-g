@@ -30,7 +30,7 @@ $(function() {
 		});
 
 		
-MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter",{ transition: "none"})});
+MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter",{ transition: "flip"})});
 
 	</script>
 	<script src="event.js"></script>
@@ -348,11 +348,14 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha_{o}) t - \frac{1}{2} gt^2
 				
 				<div class="ui-grid-a">
 					<div class="ui-block-a" style="width:55%"><canvas id="sim" width="800" height="400">HP anda tidak support! Maaf</canvas>
-						<div class="ui-grid-a">
+				
+						<div class="ui-grid-b control">
 							<div class="ui-block-a"><button class="ui-btn  ui-btn-icon-left ui-icon-play ui-nodisc-icon" onclick="start()">Mulai</button></div>					
 							<div class="ui-block-b"><button class="ui-btn  ui-btn-icon-left ui-icon-stop ui-nodisc-icon" onclick="rese()">Berhenti</button></div>					
+							<div class="ui-block-c"><button class="ui-btn  ui-btn-icon-left ui-icon-reset ui-nodisc-icon" onclick="cleant()">Reset</button></div>					
 							<div class="ui-block-a"><button class="ui-btn  ui-btn-icon-left ui-icon-pause ui-nodisc-icon" onclick="puse()">Jeda</button></div>					
 							<div class="ui-block-b"><button class="ui-btn  ui-btn-icon-left ui-icon-resume ui-nodisc-icon" onclick="res()">Lanjut</button></div>					
+							<div class="ui-block-c"></div>					
 						</div>						
 					</div>
 					<div class="ui-block-b" style="width:40%">
@@ -587,15 +590,13 @@ t=0;
 h=0;
 s=0;
 grav=9.8;
-jeda=0.1;
+jeda=0;
 vx=0;
 vy=0;
 	
 
-var sx=[];
-var sy=[];
-var sgx=[];
-var sgy=[];
+var va=[];
+var suda=[];
 
 
 
@@ -615,6 +616,13 @@ $('#sim').drawArc({
   		start: 0, end: 360
 			
 	})
+$('#sim').drawArc({
+		strokeStyle:'Black',
+		strokeWidth:'5',
+		x:transx(v*Math.cos(deg2rad(sud))*0), 
+		y:transy(v*Math.sin(deg2rad(sud))*0-(grav*0*0/2)),
+		radius:15,
+	})	
 
 $('#sim').drawRect({
 					layer:true,
@@ -686,7 +694,6 @@ $('#sim').drawVector({
   	a1: 90, l1: 190
 	
 })
-
 
 
 
