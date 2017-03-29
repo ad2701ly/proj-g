@@ -278,9 +278,7 @@ video{
     font-size: smaller;
 }
 
-.ui-panel .ui-btn{
-    font-size: 10px;
-  }
+
 .ui-panel h5{
     margin-top:-4% 
 }
@@ -291,7 +289,7 @@ video{
 
 .ui-panel{
   position:  fixed !important;
-    
+    font-size: small;
 }
 
 .ui-listview li a.ui-btn{
@@ -312,12 +310,15 @@ video{
 
 #about ul .ui-last-child{
     margin-bottom: 15%;
-    
+     white-space: normal !important;
 }
 
-#about img{
-   width: 100%;
+#about .ui-last-child img{
+margin: 1%;
+   
 }
+
+
 
 .option .ui-btn {
     text-align: left;
@@ -333,6 +334,7 @@ video{
 .kumpsoal{
     font-size: smaller;
 }
+
 
 #latihan .ui-btn {
     width: 60%;
@@ -369,4 +371,10 @@ video{
 .pan {
     width: 30%; 
     
+}
+
+.syntax{
+    background-color: #bdc3c7;
+    width: 30%;
+    margin: auto;
 }

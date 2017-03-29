@@ -6,14 +6,8 @@ $(document).on("pagebeforeshow", "#howtouse", function(event) {
   				$(".ui-footer").toolbar("hide");
 });
 
-$(document).on("pagebeforeshow", "#materi", function(event) {		
-if (materpanel==1) {
-  				$("#menyu").panel("open");
-  				materpanel=0;
-}
-});
 
-$(document).on("swiperight", "#materi", function(event) {
+$(document).on("swiperight", function(event) {
 	$("#menyu").panel("open");
 })
 

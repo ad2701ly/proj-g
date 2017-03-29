@@ -20,43 +20,44 @@ document.write("<div id='sol"+a+"' data-role='dialog' class='dissoal'>"+
 
 var c1=[
 		["Berapakah kecepatan benda saat berada pada titik tertinggi? ","Sebesar Vx","Nol","Sebesar Vo","Sebesar Vy","Tidak ada jawabannya","Sebesar Vx"],
-		["Dalam gerak peluru kecepatan pada arah sumbu x adalah...","Dipercepat","Konstan","Diperlambat","Nol","Dipercepat dan diperlambat","Konstan"],
-		["Dalam gerak peluru kecepatan pada arah sumbu y adalah...","Konstan","Dipercepat","Diperlambat","Nol","Dipercepat dan diperlambat","Dipercepat dan diperlambat"],
-		["Dalam gerak peluru kecepatan pada arah sumbu x adalah...","Dipercepat","Konstan","Diperlambat","Nol","Dipercepat dan diperlambat","Konstan"],
-		["Dalam gerak peluru kecepatan pada arah sumbu y adalah...","Konstan","Dipercepat","Diperlambat","Nol","Dipercepat dan diperlambat","Dipercepat dan diperlambat"],
+		["Dalam gerak peluru kecepatan pada arah sumbu x adalah...","Dipercepat","Konstan","Diperlambat","Nol","Berubah beraturan","Konstan"],
+		["Dalam gerak peluru kecepatan pada arah sumbu y adalah...","Konstan","Dipercepat","Diperlambat","Nol","Berubah beraturan","Berubah beraturan"],
+		["Dalam gerak peluru kecepatan pada arah sumbu x adalah...","Dipercepat","Konstan","Diperlambat","Nol","Berubah beraturan","Konstan"],
+		["Berapakah kecepatan benda saat berada pada titik terjauh? ","Sebesar Vx","Nol","Sebesar Vo","Sebesar Vy","Tidak ada jawabannya","Sebesar Vo"],
 ]
 
 var c2=[
-		["Manakah yang lebih capat sampai ke tanah","Gerah jatuh bebas","Gerak ","Bersamaan","pil4","pil5","kunci","img"],
-		["soal 2","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["soal 3","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["soal 4","pil1","pil2","pil3","pil4","pil5","kunci","img"],
+		["Dalam permainan darts","pil1","pil2","pil3","pil4","pil5","kunci","img"],
+		["Seoranng <i>stuntman</i>","pil1","pil2","pil3","pil4","pil5","kunci","img",'soalimg/jack.gif'],
+		["Seorang penembak meriam bersiap untuk menembak sasaran yang berjarak 2 km, jika dikatahui kecepatan penembak meriam adalah 200 m/s, maka penembak tersebut harus mengatur sudut tembakan sebesar...","10<sup>O</sup>","15<sup>O</sup>","30<sup>O</sup>","45<sup>O</sup>","60<sup>O</sup>","15<sup>O</sup>"],
+		["Sebuah batu dilempar dengan kecepatan awal v<sub>o</sub> setelah sampai di puncak, kecepatannya menjadi setengah dari kecepatan awal. Tentukan sudut lepat batu tersebut....","30<sup>o</sup>","45<sup>o</sup>","60<sup>o</sup>","37<sup>o</sup>","53<sup>o</sup>","60<sup>o</sup>","img"],
 		["soal 5","pil1","pil2","pil3","pil4","pil5","kunci","img"],
 ]
 
 var c3=[
-		["Dalam permainan darts","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["Seoranng <i>stuntman</i>","pil1","pil2","pil3","pil4","pil5","kunci","img",'soalimg/jack.gif'],
-		["Seorang penembak meriam bersiap untuk menembak sasaran yang berjarak 2 km, jika dikatahui kecapatan penembak meriam adalah 200 m/s, maka penembak tersebut harus mengatur sudut tembakan sebesar...","10<sup>O</sup>","15<sup>O</sup>","30<sup>O</sup>","45<sup>O</sup>","60<sup>O</sup>","15<sup>O</sup>"],
-		["soal 4","pil1","pil2","pil3","pil4","pil5","kunci","img"],
-		["soal 5","pil1","pil2","pil3","pil4","pil5","kunci","img"],
+		["Suatu meriam ditembakkan dengan kecepatan 100 m/s dan membentuk sudut 37<sup>o</sup> terhadap arah mendatar. Tentukan waktu yang diperlukan untuk mencapai titik tertinggi (sin 37<sup>o</sup> = 0,6)...","5 sekon ","6 sekon","7 sekon","8 sekon","9 sekon","6 sekon"],
+		["Suatu meriam ditembakkan dengan kecepatan 100 m/s dan membentuk sudut 37<sup>o</sup> terhadap arah mendatar. Tentukan tinggi maksimum yang dicapai peluru (sin 37<sup>o</sup> = 0,6)...","180 m ","210 m","240 m","150 m","270 m","180 m"],
+		["Suatu meriam ditembakkan dengan kecepatan 100 m/s dan membentuk sudut 37<sup>o</sup> terhadap arah mendatar. Tentukan jangkauan terjauh yang dicapai peluru (sin 37<sup>o</sup> = 0,6)...","900 m ","930 m","960 m","990 m","870 m","960 m"],
+		["Suatu meriam ditembakkan dengan kecepatan 100 m/s dan membentuk sudut 37<sup>o</sup> terhadap arah mendatar. Tentukan kecepatan meriam saat 10 sekon (sin 37<sup>o</sup> = 0,6)....","\\[ 20 \\sqrt{2} m/s\\]","\\[ 10 \\sqrt{3} m/s\\]","\\[ 20 \\sqrt{3} m/s\\]","\\[ 10 \\sqrt{2} m/s\\]","\\[ 30 m/s\\]","\\[ 20 \\sqrt{2} m/s\\]"],
+		["Suatu meriam ditembakkan dengan kecepatan 100 m/s dan membentuk sudut 37<sup>o</sup> terhadap arah mendatar. Tentukan kecepatan meriam saat 2 sekon (sin 37<sup>o</sup> = 0,6)....","\\[ 20 \\sqrt{2} m/s\\]","\\[ 10 \\sqrt{3} m/s\\]","\\[ 20 \\sqrt{3} m/s\\]","\\[ 10 \\sqrt{2} m/s\\]","\\[ 30 m/s\\]","\\[ 20 \\sqrt{2} m/s\\]"],
+		
 ]
 
 var c4=[
-		["Sebuah benda dilemparkan dari puncak sebuah gedung yang tingginya 40 m. Kecepatan awal benda 20 m/s dengan sudut elevasi 30°. Tentukan jarak terjauh dalam arah mendatar yang dapat dicapai benda, dihitung dari dasar gedung.","\\[ 40 \\sqrt{3} \\]","\\[ 40 \\sqrt{2} \\]","\\[ 40 \\]","\\[ 60 \\sqrt{3} \\]","\\[ 60 \\sqrt{2} \\]","\\[ 40 \\sqrt{3} \\]","img","s4.png"],
-		["Sebuah benda dilemparkan dari puncak sebuah gedung yang tingginya 40 m. Kecepatan awal benda 20 m/s dengan sudut elevasi 30°. Tentukan jarak terjauh dalam arah mendatar yang dapat dicapai benda, dihitung dari dasar gedung.","\\[ 40 \\sqrt{3} \\]","40","40 \\sqrt{2}","60 \\sqrt{3}","60 \\sqrt{3}","\\[ 40 \\sqrt{3} \\]","img","s4.png"],
-		["Sebuah benda dilemparkan dari puncak sebuah gedung yang tingginya 40 m. Kecepatan awal benda 20 m/s dengan sudut elevasi 30°. Tentukan jarak terjauh dalam arah mendatar yang dapat dicapai benda, dihitung dari dasar gedung.","\\[ 40 \\sqrt{3} \\]","40","40 \\sqrt{2}","60 \\sqrt{3}","60 \\sqrt{3}","\\[ 40 \\sqrt{3} \\]","img","s4.png"],
-		["Sebuah benda dilemparkan dari puncak sebuah gedung yang tingginya 40 m. Kecepatan awal benda 20 m/s dengan sudut elevasi 30°. Tentukan jarak terjauh dalam arah mendatar yang dapat dicapai benda, dihitung dari dasar gedung.","\\[ 40 \\sqrt{3} \\]","40","40 \\sqrt{2}","60 \\sqrt{3}","60 \\sqrt{3}","\\[ 40 \\sqrt{3} \\]","img","s4.png"],
-		["Sebuah benda dilemparkan dari puncak sebuah gedung yang tingginya 40 m. Kecepatan awal benda 20 m/s dengan sudut elevasi 30°. Tentukan jarak terjauh dalam arah mendatar yang dapat dicapai benda, dihitung dari dasar gedung.","\\[ 40 \\sqrt{3} \\]","40","40 \\sqrt{2}","60 \\sqrt{3}","60 \\sqrt{3}","\\[ 40 \\sqrt{3} \\]","img","s4.png"],
+		["Sebuah benda dilemparkan dari puncak sebuah gedung yang tingginya 40 m. Kecepatan awal benda 20 m/s dengan sudut elevasi 30°. Tentukan jarak terjauh dalam arah mendatar yang dapat dicapai benda, dihitung dari dasar gedung.","\\[ 40 \\sqrt{3} \\]","\\[ 40 \\sqrt{2} \\]","\\[ 40 \\]","\\[ 60 \\sqrt{3} \\]","\\[ 60 \\sqrt{2} \\]","\\[ 40 \\sqrt{3} \\]","img","s41.png"],
+		["Sebuah benda dilemparkan dari puncak sebuah gedung yang tingginya 40 m. Kecepatan awal benda 20 m/s dengan sudut elevasi 30°. Tentukan jarak terjauh dalam arah mendatar yang dapat dicapai benda, dihitung dari dasar gedung.","\\[ 40 \\sqrt{3} \\]","\\[ 40 \\sqrt{2} \\]","\\[ 40 \\]","\\[ 60 \\sqrt{3} \\]","\\[ 60 \\sqrt{2} \\]","\\[ 40 \\sqrt{3} \\]","img","s41.png"],
+		["Dalam rekor '<i>motorcycle jump</i>' seperti pada gambar di atas tercatat jarak terjauh yang ditempuh adalah 80 m, jika ketinggian antara saat melompat dan mendarat sama, dan membentuk sudut 37<sup>o</sup>, berapakah kecepatan minimal saat melompat agar bisa memecahkan rekor tersebut? ","100 m/s","80 m/s","95 m/s","90 m/s","85 m/s","100 m/s","img","s1.gif"],
+		["Dalam rekor '<i>motorcycle jump</i>' seperti pada gambar di atas tercatat jarak terjauh yang ditempuh adalah 80 m, jika ketinggian antara saat melompat dan mendarat sama, dan membentuk sudut 37<sup>o</sup>, berapakah kecepatan minimal saat melompat agar bisa memecahkan rekor tersebut? ","100 m/s","80 m/s","95 m/s","90 m/s","85 m/s","100 m/s","img","s1.gif"],
+		["Sebuah mobil hendak menyebrangi sebuah parit yang lebarnya 4 m. Perbedaan tinggi antara kedua sisi parit itu adalah 20 cm, seperti pada gambar diatas. Jika percepatan gravitasi adalah 10 m/s<sup2</sup>, berapakah kelajuan minimum agar penyebrangan mobil dapat berlangsung?","20 m/s","40 m/s","25 m/s","10 m/s","30 m/s","20 m/s","img","s42.png"],
 
 ]
 
 var c5=[
-		["Seorang <i>stuntman</i> akan melakukan adegan seperti pada gambar diatas, dengan ketentuan jarak antara saat mobil lepas landas dan bagian belakang kapal adalah 2000 meter, sedangkan bagian loncatan membentuk sudut 45<sup>O</sup>, beda ketinggian saat mobil lepas landas dan kapal adalah 20 m, berapakah kecepatan minimal mobil agar mendarat sampai di kapal?","pil1","pil2","pil3","pil4","pil5","kunci","img","ps4.gif"],
-		["Seorang <i>stuntman</i> akan melakukan adegan seperti pada gambar diatas, dengan ketentuan jarak antara saat mobil lepas landas dan bagian belakang kapal adalah 2000 meter, sedangkan bagian loncatan membentuk sudut 45<sup>O</sup>, beda ketinggian saat mobil lepas landas dan kapal adalah 20 m, berapakah kecepatan minimal mobil agar mendarat sampai di kapal?","pil1","pil2","pil3","pil4","pil5","kunci","img","ps4.gif"],
-		["Seorang <i>stuntman</i> akan melakukan adegan seperti pada gambar diatas, dengan ketentuan jarak antara saat mobil lepas landas dan bagian belakang kapal adalah 2000 meter, sedangkan bagian loncatan membentuk sudut 45<sup>O</sup>, beda ketinggian saat mobil lepas landas dan kapal adalah 20 m, berapakah kecepatan minimal mobil agar mendarat sampai di kapal?","pil1","pil2","pil3","pil4","pil5","kunci","img","ps4.gif"],
-		["Seorang <i>stuntman</i> akan melakukan adegan seperti pada gambar diatas, dengan ketentuan jarak antara saat mobil lepas landas dan bagian belakang kapal adalah 2000 meter, sedangkan bagian loncatan membentuk sudut 45<sup>O</sup>, beda ketinggian saat mobil lepas landas dan kapal adalah 20 m, berapakah kecepatan minimal mobil agar mendarat sampai di kapal?","pil1","pil2","pil3","pil4","pil5","kunci","img","ps4.gif"],
-		["Seorang <i>stuntman</i> akan melakukan adegan seperti pada gambar diatas, dengan ketentuan jarak antara saat mobil lepas landas dan bagian belakang kapal adalah 2000 meter, sedangkan bagian loncatan membentuk sudut 45<sup>O</sup>, beda ketinggian saat mobil lepas landas dan kapal adalah 20 m, berapakah kecepatan minimal mobil agar mendarat sampai di kapal?","pil1","pil2","pil3","pil4","pil5","kunci","img","ps4.gif"],
+		["Dalam permainan sepak bola, seorang pemain akan memberikan umpan lambung dengan rincian kecepatan bola saat ditendang adalah 20 m/s dengan sudut 45<sup>o</sup>, pemain depan yang berjarak 55 m darinya segera berlari menuju titik dimana bola mendarat, tentukan kecepatan minimal pamain tersebut agar bola dapat mendapat umpan tersebut?","10 m/s","10,3 m/s","10,6 m/s","10,9 m/s","11,2 m/s","10,3 m/s"],
+		["Dalam permainan sepak bola, seorang pemain akan memberikan umpan lambung dengan rincian kecepatan bola saat ditendang adalah 20 m/s dengan sudut 45<sup>o</sup>, pemain depan yang berjarak 55 m darinya segera berlari menuju titik dimana bola mendarat, tentukan kecepatan minimal pamain tersebut agar bola dapat mendapat umpan tersebut?","10 m/s","10,3 m/s","10,6 m/s","10,9 m/s","11,2 m/s","10,3 m/s"],
+		["Dalam permainan sepak bola, seorang pemain akan memberikan umpan lambung dengan rincian kecepatan bola saat ditendang adalah 20 m/s dengan sudut 45<sup>o</sup>, pemain depan yang berjarak 55 m darinya segera berlari menuju titik dimana bola mendarat, tentukan kecepatan minimal pamain tersebut agar bola dapat mendapat umpan tersebut?","10 m/s","10,3 m/s","10,6 m/s","10,9 m/s","11,2 m/s","10,3 m/s"],
+		["Dalam permainan sepak bola, seorang pemain akan memberikan umpan lambung dengan rincian kecepatan bola saat ditendang adalah 20 m/s dengan sudut 45<sup>o</sup>, pemain depan yang berjarak 55 m darinya segera berlari menuju titik dimana bola mendarat, tentukan kecepatan minimal pamain tersebut agar bola dapat mendapat umpan tersebut?","10 m/s","10,3 m/s","10,6 m/s","10,9 m/s","11,2 m/s","10,3 m/s"],
+		["Dalam permainan sepak bola, seorang pemain akan memberikan umpan lambung dengan rincian kecepatan bola saat ditendang adalah 20 m/s dengan sudut 45<sup>o</sup>, pemain depan yang berjarak 55 m darinya segera berlari menuju titik dimana bola mendarat, tentukan kecepatan minimal pamain tersebut agar bola dapat mendapat umpan tersebut?","10 m/s","10,3 m/s","10,6 m/s","10,9 m/s","11,2 m/s","10,3 m/s"],
 ]
 var pi=[1,2,3,4,5];
 var bon=[1,2,3,4];
