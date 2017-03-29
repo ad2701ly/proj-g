@@ -68,7 +68,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		    
 		<div data-role="main-content">
 		
-			<div class="ui-grid-solo" style="margin-top: 5%;">
+			<div class="ui-grid-solo" style="margin-top: 10%;/">
 				<div class="ui-block-a"><h1>Selamat datang</h1>
 				Untuk memulai silakan pilih salah satu menu di bawah ini<br>
 				<div class="wrapper"><i>disarankan untuk membuka menu "materi" terlebih dahulu</i></div>
@@ -106,7 +106,6 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
    <div data-role="page" id="materi" >
 		<div data-role="header" data-position="fixed">
 			<h4>Materi</h4>
-			<a href="#menyu" class="ui-btn ui-icon-opmen ui-btn-icon-right ui-nodisc-icon">Daftar Isi</a>		
 		</div>    
 		<div data-role="main-content">
 
