@@ -6,10 +6,21 @@ $(document).on("pagebeforeshow", "#howtouse", function(event) {
   				$(".ui-footer").toolbar("hide");
 });
 
+$(document).on("pagebeforeshow", "#materi", function(event) {		
+if (materpanel==1) {
+  				$("#menyu").panel("open");
+  				materpanel=0;
+}
+});
+
+$(document).on("swiperight", "#materi", function(event) {
+	
+})
+
 $(document).on("pagebeforeshow", "#petunjuk", function(event) {		
   				$(".ui-footer").toolbar("hide");
 });
-/*
+
 $(document).on("pagebeforeshow", "#simulasi", function(event) {		
   				sh=setInterval(update,1000/30);
 });
@@ -17,7 +28,7 @@ $(document).on("pagebeforeshow", "#simulasi", function(event) {
 $(document).on("pagehide", "#simulasi", function(event) {		
   				clearInterval(sh);
 });
-*/
+
 
 		
 $(document).on("pagebeforeshow","#sol1", function (event) {

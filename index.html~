@@ -67,8 +67,8 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
     <div data-role="page" id="blank" data-fullscreen="true">
 		    
 		<div data-role="main-content">
-		<a href="#howtouse" class="ui-btn ui-icon-info ui-btn-icon-notext ui-corner-all"></a>
-			<div class="ui-grid-solo">
+		
+			<div class="ui-grid-solo" style="margin-top: 5%;">
 				<div class="ui-block-a"><h1>Selamat datang</h1>
 				Untuk memulai silakan pilih salah satu menu di bawah ini<br>
 				<div class="wrapper"><i>disarankan untuk membuka menu "materi" terlebih dahulu</i></div>
@@ -76,10 +76,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 			</div>		
 				<div class="ui-grid-d">
 						<div class="ui-block-a mentul"><img src="img/down.png" alt=""></div>
-						<!--div class="ui-block-b"><img src="img/down.png" alt=""></div>
-						<div class="ui-block-c"><img src="img/down.png" alt=""></div>
-						<div class="ui-block-d"><img src="img/down.png" alt=""></div>
-						<div class="ui-block-e"><img src="img/down.png" alt=""></div-->
+						
 					</div>	
 			
 		</div>
@@ -112,6 +109,9 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 			<a href="#menyu" class="ui-btn ui-icon-opmen ui-btn-icon-right ui-nodisc-icon">Daftar Isi</a>		
 		</div>    
 		<div data-role="main-content">
+
+
+	
 		 <p class="top">Perhatikan video dibawah ini</p>
 			<video height="200" controls class="vid">
 				<source src="mg.mp4" type="video/mp4"> 
@@ -121,8 +121,10 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 	<p class="bottom">Menurut kalian, apa yang terdapat dalam video diatas?<br>
 		Menurut kalian, dapatkah kalian menyebutkan peristiwa tersebut?<br>
 		Menurut kalian, besaran apa saja yang terdapat dalam peristiwa tersebut?
-	
 		</p>
+	
+
+			
     </div>
    </div>
    
@@ -485,7 +487,7 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha_{o}) t - \frac{1}{2} gt^2
     <audio src="sound/start.ogg" autoplay="true" ></audio>
 		
 	<div data-role="panel" id="menyu" data-position="left" data-display="overlay" data-theme="b">
-        <h5 style="text-align: center">Daftar Isi</h5>
+       <h5 style="text-align: center;">Daftar Isi</h5>
         <ul data-role="listview" class="lis" data-position-fixed="true">
         
         		<li><a href="skkd.html" >SK dan KD</a></li>	
@@ -496,24 +498,26 @@ y=v_{oy}t- {1 \over 2}gt^2=(v_o sin \alpha_{o}) t - \frac{1}{2} gt^2
         		<li><a href="#posben" >Posisi Benda</a></li>	
         		<li><a href="#ketmaks" >Ketinggian Maksimum</a></li>	
         		<li><a href="#jarjang" >Jarak Jangkauan</a></li>	
-        </ul>
-        
+        </ul>  
 	</div> 
     
     
     <div data-role="footer" data-fullscreen="true" data-position="fixed" data-tap-toggle="false">
 		<div data-role="navbar" data-grid="d" >
 		<ul id="tools">
-			<li><a href="#materi" class="ui-state-persist ui-btn-icon-top ui-icon-materi" onclick="playtool(this)">MATERI</a></li>		
+			<li><a href="#menyu"  class="ui-state-persist ui-btn-icon-top ui-icon-materi" onclick="playtool(this)">MATERI</a></li>						
 			<li><a href="#simulasi" class="ui-state-persist ui-btn-icon-top ui-icon-simulasi" onclick="playtool(this)">SIMULASI</a></li>		
 			<li><a href="#latihan" class="ui-state-persist ui-btn-icon-top ui-icon-latihan" onclick="playtool(this)">LATIHAN</a></li>		
 			<li><a href="#about" class="ui-state-persist ui-btn-icon-top ui-icon-about" onclick="playtool(this)">TENTANG</a></li>		
 			<li><a href="#exit" class="ui-state-persist ui-btn-icon-top ui-icon-exit" onclick="playtool(this)">KELUAR</a></li>					
-		</ul>    
+		</ul>
+		 
+	</div>
+		        
     </div>
     </div>
-		
-		    
+	
+	
     
     
     <script type="text/javascript" src="cordova.js"></script>
@@ -594,6 +598,7 @@ jeda=0;
 vx=0;
 vy=0;
 	
+var materpanel=1;
 
 var va=[];
 var suda=[];
@@ -616,6 +621,13 @@ $('#sim').drawArc({
   		start: 0, end: 360
 			
 	})
+$('#sim').drawArc({
+		strokeStyle:'Black',
+		strokeWidth:'5',
+		x:transx(v*Math.cos(deg2rad(sud))*0), 
+		y:transy(v*Math.sin(deg2rad(sud))*0-(grav*0*0/2)),
+		radius:15,
+	})	
 
 $('#sim').drawRect({
 					layer:true,
