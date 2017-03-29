@@ -175,7 +175,7 @@ for (m=0;m<=t;m++) {
 
 // Lintasan
 if (va.length>1 && suda.length>1) {
-	for (i=va.length-2;i<va.length-1;i++) {
+	for (i=0;i<va.length-1;i++) {
 	for (loc=0;loc<=tbmax(va[i],suda[i]);loc++) {
 		$('#sim').drawArc({
 		strokeStyle:'Black',
