@@ -28,10 +28,10 @@ var c1=[
 
 var c2=[
 		["Seorang penembak meriam bersiap untuk menembak sasaran yang berjarak 2 km, jika dikatahui kecepatan penembak meriam adalah 200 m/s, maka penembak tersebut harus mengatur sudut tembakan sebesar...","10<sup>O</sup>","15<sup>O</sup>","30<sup>O</sup>","45<sup>O</sup>","60<sup>O</sup>","15<sup>O</sup>"],
-		["Seorang penembak meriam bersiap untuk menembak sasaran yang berjarak 2 km, jika dikatahui kecepatan penembak meriam adalah 200 m/s, maka penembak tersebut harus mengatur sudut tembakan sebesar...","10<sup>O</sup>","15<sup>O</sup>","30<sup>O</sup>","45<sup>O</sup>","60<sup>O</sup>","15<sup>O</sup>"],
-		["Sebuah batu dilempar dengan kecepatan awal v<sub>o</sub> setelah sampai di puncak, kecepatannya menjadi setengah dari kecepatan awal. Tentukan sudut lepat batu tersebut....","30<sup>o</sup>","45<sup>o</sup>","60<sup>o</sup>","37<sup>o</sup>","53<sup>o</sup>","60<sup>o</sup>","img"],
-		["Sebuah batu dilempar dengan kecepatan awal v<sub>o</sub> setelah sampai di puncak, kecepatannya menjadi setengah dari kecepatan awal. Tentukan sudut lepat batu tersebut....","30<sup>o</sup>","45<sup>o</sup>","60<sup>o</sup>","37<sup>o</sup>","53<sup>o</sup>","60<sup>o</sup>","img"],
-		["Sebuah batu dilempar dengan kecepatan awal v<sub>o</sub> setelah sampai di puncak, kecepatannya menjadi setengah dari kecepatan awal. Tentukan sudut lepat batu tersebut....","30<sup>o</sup>","45<sup>o</sup>","60<sup>o</sup>","37<sup>o</sup>","53<sup>o</sup>","60<sup>o</sup>","img"],
+		["Dua buah batu dilempar dengan kecepatan awal v<sub>o</sub> sama, dengan sudut 30 <sup>o</sup> dan 60 <sup>o</sup>, berapakah perbandingan titik tertinggi yang dicapai kedua batu tersebut?","1:1","2:1","1:2","1:3","3:1","1:3"],
+		["Dua buah batu dilempar dengan kecepatan awal v<sub>o</sub> sama, dengan sudut 30 <sup>o</sup> dan 60 <sup>o</sup>, berapakah perbandingan jarak terjauh yang dicapai kedua batu tersebut?","1:1","2:1","1:2","1:3","3:1","1:1"],
+		["Sebuah batu dilempar dengan kecepatan awal v<sub>o</sub> setelah sampai di puncak, kecepatannya menjadi setengah dari kecepatan awal. Tentukan sudut lepat batu tersebut....","30<sup>o</sup>","45<sup>o</sup>","60<sup>o</sup>","37<sup>o</sup>","53<sup>o</sup>","60<sup>o</sup>"],
+		["Sebuah batu dilempar dengan kecepatan awal v<sub>o</sub> setelah sampai di puncak, kecepatannya menjadi setengah dari kecepatan awal. Tentukan sudut lepat batu tersebut....","30<sup>o</sup>","45<sup>o</sup>","60<sup>o</sup>","37<sup>o</sup>","53<sup>o</sup>","60<sup>o</sup>"],
 		
 ]
 

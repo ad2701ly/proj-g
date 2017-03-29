@@ -292,15 +292,14 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		keterangan:<br>		
 		t<sub>xmax</sub>	 = waktu yang diperlukan untuk mencapai jarak jangkauan (x<sub>max</sub>) <br>
 		
-		<p class="bottom">Substitusi nilai t <sub>xmax</sub> ke persamaan posisi benda setiap saat:<br>
+		<p>Substitusi nilai t <sub>xmax</sub> ke persamaan posisi benda setiap saat:<br>
 		\[		x_{max}=(v_o cos \alpha_{o}) t_{max}		\]
 		\[		x_{max} = (v_o cos \alpha_{o}) { \left (2v_o sin \alpha_{o} \over g \right)}		\]
 		\[		x_{max} = {v_o^2 (2 cos \alpha_{o} sin \alpha_{o}) \over g}		\]
 		Menurut rumus trigonometri,<div class="syntax"> 2 sin &alpha; cos &alpha; = sin 2&alpha;</div>, sehingga:<br>		  
 		<div>\[		x_{max} = {v_o^2 sin 2 \alpha_{o} \over g}		\] </div> 
-		
-		 
 		</p>	
+		<p class="bottom"></p>		
 		
 </div>	 	
 	</div>
