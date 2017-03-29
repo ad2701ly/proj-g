@@ -6,6 +6,12 @@ $(document).on("pagebeforeshow", "#howtouse", function(event) {
   				$(".ui-footer").toolbar("hide");
 });
 
+$(document).on("pagebeforeshow", "#simulasi", function(event) {		
+			if (helpsim==0) {
+  				window.location.replace('#petunjuk');
+  				helpsim=1;
+			}  				
+});
 
 $(document).on("swiperight", function(event) {
 	$("#menyu").panel("open");
@@ -14,6 +20,11 @@ $(document).on("swiperight", function(event) {
 $(document).on("pagebeforeshow", "#petunjuk", function(event) {		
   				$(".ui-footer").toolbar("hide");
 });
+
+$(document).on("pagehide", "#petunjuk", function(event) {		
+  				$(".ui-footer").toolbar("show");
+});
+
 
 $(document).on("pagebeforeshow", "#simulasi", function(event) {		
   				sh=setInterval(update,1000/30);
@@ -53,7 +64,6 @@ $(document).on("pagebeforehide","#sol3", function (event) {
 $(document).on("pagebeforehide","#sol4", function (event) {
 			$(".ui-footer").toolbar("show");
 })
-
 $(document).on("pagebeforehide","#sol5", function (event) {
 			$(".ui-footer").toolbar("show");
 })

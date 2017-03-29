@@ -114,6 +114,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		 <p class="top">Perhatikan video dibawah ini</p>
 			<video height="200" controls class="vid">
 				<source src="mg.mp4" type="video/mp4"> 
+				<track src="mg.vtt" kind="subtitles"></track>
 			</video>
 	
 	
@@ -299,7 +300,10 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		Menurut rumus trigonometri,<div class="syntax"> 2 sin &alpha; cos &alpha; = sin 2&alpha;</div>, sehingga:<br>		  
 		<div>\[		x_{max} = {v_o^2 sin 2 \alpha_{o} \over g}		\] </div> 
 		</p>	
-		<p class="bottom"></p>		
+		<p class="bottom">
+		Keterangan :
+		x<sub>max</sub> = Jarak jangkauan maksimum yang dicapai benda		
+		</p>		
 		
 </div>	 	
 	</div>
@@ -366,13 +370,14 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 				</div>
 				<ol>
 					<li>Petunjuk penggunaan : digunakan untuk menampilkan halaman bantuan ini</li>
-					<li>Kontrol variabel simulasi : digunakan untuk kecapatan dan sudut tembak pada simulasi</li>
-					<li>Tombol kontrol : terdapat empat tombol, masing-masing berfungsi sebagai berikut:
+					<li>Kontrol variabel simulasi : digunakan untuk kecepatan dan sudut tembak pada simulasi</li>
+					<li>Tombol kontrol : terdapat lima tombol, masing-masing berfungsi sebagai berikut:
 							<ul>
 								<li>Mulai : Digunakan untuk memulai simulasi</li>							
 								<li>Jeda : Digunakan untuk menjeda simulasi</li>							
 								<li>Lanjutkan : Digunakan untuk melanjutkan simulasi yang sebelumnya dijeda</li>							
 								<li>Berhenti : Digunakan untuk memberhentikan simulasi dan reset posisi semula</li>							
+								<li>Reset : Digunakan untuk set ulang pada kondisi semula dan membersihkan lintasan</li>							
 							</ul></li>
 					<li>Layar simulasi : merupakan hasil dari "kontrol variabel simulasi" yang telah di atur. </li>
 					<li>Hasil kecepatan : merupakan perkiraan kecepatan yang terdapat pada simulasi dan diuraikan terhadap sumbunya. </li>
@@ -571,7 +576,7 @@ jeda=0;
 vx=0;
 vy=0;
 	
-var materpanel=1;
+var helpsim=0;
 
 var va=[];
 var suda=[];

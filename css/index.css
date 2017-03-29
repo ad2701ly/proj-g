@@ -228,6 +228,7 @@ canvas{
 #simulasi .control{
     font-size: 10px;
     margin-left: 5px;
+    width: 90%;
    
 }
 #simulasi label{
