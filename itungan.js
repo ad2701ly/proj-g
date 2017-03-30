@@ -86,13 +86,28 @@ function start() {
 
 		
 function rese() {
-jeda=0;		 
-	
+
 	$('canvas').setLayer('ball',{
 	x:cxnol, y:cynol
 	})
 	.drawLayers();
+s=0;
+h=0;
+v=0;
+t=0;
+
+
+if (jeda!=0) {
+	va.splice(va.length -1,1);
+	suda.splice(suda.length -1,1);
+	jeda=0;
+	}else {
+	jeda=0;
+	}	
+
 }
+
+
 
 function update() {
 //ball vector
@@ -175,7 +190,7 @@ for (m=0;m<=t;m++) {
 
 // Lintasan
 if (va.length>1 && suda.length>1) {
-	for (i=0;i<va.length-1;i++) {
+	for (i=va.length-2;i<va.length-1;i++) {
 	for (loc=0;loc<=tbmax(va[i],suda[i]);loc++) {
 		$('#sim').drawArc({
 		strokeStyle:'Black',

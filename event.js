@@ -5,14 +5,14 @@ $(document).on("pageshow", "#blank", function(event) {
 $(document).on("pagebeforeshow", "#howtouse", function(event) {		
   				$(".ui-footer").toolbar("hide");
 });
-
+/*
 $(document).on("pagebeforeshow", "#simulasi", function(event) {		
 			if (helpsim==0) {
   				window.location.replace('#petunjuk');
   				helpsim=1;
 			}  				
 });
-
+*/
 $(document).on("swiperight", function(event) {
 	$("#menyu").panel("open");
 })
