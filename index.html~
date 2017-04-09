@@ -506,7 +506,6 @@ function plays() {
 	yes.play();
 }
 
-@Override
 public void onBackPressed() {
 }
 

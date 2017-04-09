@@ -17,6 +17,9 @@ $(document).on("swiperight", function(event) {
 	$("#menyu").panel("open");
 })
 
+$('#simulasi').on("swiperight", function(event) {
+	$("#menyu").panel.("close")
+})
 
 
 
