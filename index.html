@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
@@ -12,6 +12,7 @@
 
     <link rel='stylesheet' type='text/css' href='css/index.css' />
     <link rel='stylesheet' type='text/css' href='js/jquery.mobile-1.4.5.min.css' />
+    <link rel='stylesheet' type='text/css' href='theme/imba.min.css' />
 	<script src='js/jquery-1.8.0.min.js'></script>
 	<script src='js/jquery.mobile-1.4.5.min.js'></script>
 	<script src='jcanvas.min.js'></script>
@@ -83,7 +84,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		    
     </div>
     
-	<div data-role="page" id="howtouse" data-dialog="true">
+	<div data-role="page" id="howtouse" data-dialog="true" data-theme="d">
 		<div data-role="main-content">
 			<div class="wrapper">
 			<ul data-role="listview">
@@ -108,7 +109,22 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 			<h4>Pemanasan</h4>
 		</div>    
 		<div data-role="main-content">
-
+			<div class="matpan">
+<div class="ui-grid-a">
+	<div class="ui-block-a">
+		<ul data-role="listview">
+				<li><a href="#materi" class="ui-active">Pemanasan</a></li>	
+				<li><a href="skkd.html" >SK dan KD</a></li>	
+        		<li><a href="tujuan.html" >Tujuan</a></li>	
+        		<li><a href="#pendahuluan" >Pendahuluan</a></li>	
+        		<li><a href="#kecawal" >Kecepatan Awal</a></li>	
+        		<li><a href="#kecses" >Kecepatan Sesaat</a></li>	
+        		<li><a href="#posben" >Posisi Benda</a></li>	
+        		<li><a href="#ketmaks" >Ketinggian Maksimum</a></li>	
+        		<li><a href="#jarjang" >Jarak Jangkauan</a></li>	
+		</ul>	
+	</div>
+	<div class="ui-block-b">
 
 	
 		 <p class="top">Perhatikan video dibawah ini</p>
@@ -125,6 +141,10 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		</p>
 	
 <p class="bottom">Di Kelas X, Kalian telah mempelajari gerak lurus dan gerak melingkar. Dalam materi ini, Kalian akan mempelajari tentang gerak parabola dengan menggunakan analisis vektor.</p>
+
+			</div>
+	</div>
+</div>
 			
     </div>
    </div>
@@ -171,7 +191,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
    
    
    
-<div data-role="page" id="kecses" data-theme="a">
+<div data-role="page" id="kecses" data-theme="c">
 	<div data-role="header"  data-position="fixed" class="ui-state-persist">
 			
 			<h4 style="text-align:center">Kecepatan Sesaat</h4>
@@ -388,7 +408,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
    
     
     
-    <div data-role="page" id="latihan">
+    <div data-role="page" id="latihan"  data-theme="c">
 		<div data-role="header"><h4>Latihan</h4></div>   
 		<div data-role="main-content">
 		<div class="ui-grid-b">
@@ -439,7 +459,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		</div>    
     </div>
     
-    <div data-role="page" id="exit" data-dialog="true" data-theme="a">
+    <div data-role="page" id="exit" data-dialog="true" data-theme="c">
 			<div data-role="main-content">
 				<div class="ui-grid-solo">	
 					<div class="ui-block-a"><h2>Apakah anda yakin mau keluar?</h2></div>
@@ -472,7 +492,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 	</div> 
     
     
-    <div data-role="footer" data-fullscreen="true" data-position="fixed" data-tap-toggle="false" id="tools">
+    <div data-role="footer" data-fullscreen="true" data-position="fixed" data-tap-toggle="false" id="tools" >
 		<div data-role="navbar" data-grid="d" >
 		<ul id="tools">
 			<li><a href="#menyu"  class="ui-state-persist ui-btn-icon-top ui-icon-materi" onclick="playtool(this)">MATERI</a></li>						
@@ -506,9 +526,7 @@ function plays() {
 	yes.play();
 }
 
-@Override
-public void onBackPressed() {
-}
+
 
 function playtool(mlm) {
 	var yes=document.getElementById("ok");
@@ -586,9 +604,7 @@ var suda=[];
 
 
 
-$("#inter").click(function () {
-	window.location.replace('#howtouse');
-});
+
 
 
 $('#sim').drawArc({

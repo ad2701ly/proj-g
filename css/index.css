@@ -275,6 +275,7 @@ video{
     margin-bottom: 10%; 
 }
 
+
 .lis{
     font-size: smaller;
 }
@@ -286,6 +287,10 @@ video{
 
 .wrapper{
    font-size: 12px; 
+}
+
+.men{
+    width: 30%;
 }
 
 .ui-panel{
@@ -340,7 +345,6 @@ margin: 1%;
 #latihan .ui-btn {
     width: 60%;
     margin: 8% auto;
-    border: 3px solid black;
     font-size:larger;
 }
 
@@ -373,6 +377,19 @@ margin: 1%;
     width: 30%; 
     
 }
+
+.matpan .ui-grid-a .ui-block-a{
+    width: 30%;
+    font-size: smaller;
+     
+}
+
+.matpan .ui-grid-a .ui-block-b{
+    width: 70%;
+    padding-left: 2%; 
+    border-left: 1px solid black;
+}
+
 
 .syntax{
     background-color: #bdc3c7;

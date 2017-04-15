@@ -9,7 +9,7 @@
 <body>
 <div data-role="page" id="kecawal" data-theme="a">
 	<div data-role="header"  data-position="fixed" class="ui-state-persist">
-	
+	<a href="#menyu" class="ui-btn ui-icon-opmen ui-btn-icon-right ui-nodisc-icon">Daftar Isi</a>		
 			<h4 style="text-align:center">Tujuan Pembelajaran</h4>
 	</div><!--header-->
 	<div data-role="main" class="ui-content">

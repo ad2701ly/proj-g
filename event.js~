@@ -17,10 +17,9 @@ $(document).on("swiperight", function(event) {
 	$("#menyu").panel("open");
 })
 
-$('#simulasi').on("swiperight", function(event) {
-	$("#menyu").panel.("close")
-})
-
+$(document).on("tap","#inter",function () {
+	window.location.replace('#howtouse');
+});
 
 
 $(document).on("pagebeforeshow", "#petunjuk", function(event) {		
