@@ -75,10 +75,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 				<div class="wrapper"><i>disarankan untuk membuka menu "materi" terlebih dahulu</i></div>
 				</div>
 			</div>		
-				<div class="ui-grid-d">
-						<div class="ui-block-a mentul"><img src="img/down.png" alt=""></div>
-						
-					</div>	
+				
 			
 		</div>
 		    
