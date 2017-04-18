@@ -23,6 +23,7 @@
     <preference name="auto-hide-splash-screen" value="false" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
+	<preference name="android-targetSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
     <plugin name="cordova-plugin-whitelist" version="1" />
 	<plugin name="cordova-plugin-splashscreen" source="npm" spec="3.2.2" />
@@ -36,6 +37,7 @@
     	<splash src="splash.png"/>
 	<icon src="icon.png"/>
         <allow-intent href="market:*" />
+	
     </platform>
 
     <engine name="browser" spec="~4.0.0" />
