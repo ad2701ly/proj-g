@@ -106,28 +106,10 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 			<h4>Pemanasan</h4>
 		</div>    
 		<div data-role="main-content">
-			<div class="matpan">
-<div class="ui-grid-a">
-	<div class="ui-block-a">
-		<ul data-role="listview">
-				<li><a href="#materi" class="ui-active">Pemanasan</a></li>	
-				<li><a href="skkd.html" >SK dan KD</a></li>	
-        		<li><a href="tujuan.html" >Tujuan</a></li>	
-        		<li><a href="#pendahuluan" >Pendahuluan</a></li>	
-        		<li><a href="#kecawal" >Kecepatan Awal</a></li>	
-        		<li><a href="#kecses" >Kecepatan Sesaat</a></li>	
-        		<li><a href="#posben" >Posisi Benda</a></li>	
-        		<li><a href="#ketmaks" >Ketinggian Maksimum</a></li>	
-        		<li><a href="#jarjang" >Jarak Jangkauan</a></li>	
-		</ul>	
-	</div>
-	<div class="ui-block-b">
-
-	
+	<div class="wrapper">
 		 <p class="top">Perhatikan video dibawah ini</p>
 			<video height="200" controls class="vid">
 				<source src="mg.mp4" type="video/mp4"> 
-				<track src="mg.vtt" kind="subtitles"></track>
 			</video>
 	
 	
@@ -139,12 +121,12 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 	
 <p class="bottom">Di Kelas X, Kalian telah mempelajari gerak lurus dan gerak melingkar. Dalam materi ini, Kalian akan mempelajari tentang gerak parabola dengan menggunakan analisis vektor.</p>
 
-			</div>
+		
+	</div>
 	</div>
 </div>
 			
-    </div>
-   </div>
+   
    
 <div data-role="page" id="pendahuluan" data-theme="a">
 
@@ -155,6 +137,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 	</div><!--header-->
 	<div class="wrapper">
 	<div data-role="main" class="ui-content">
+	</div>
 	<p>	Pada kegiatan sehari-hari, seringkali fenomena fisika terjadi. Salah satunya gerak melambung bola saat disepak. Menurut kalian mengapa bola dapat bergerak dengan lintasan parabola?<br></p>
 				<div>
 				<ul type="a" data-role="listview" data-inset="true">
@@ -188,7 +171,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
    
    
    
-<div data-role="page" id="kecses" data-theme="c">
+<div data-role="page" id="kecses">
 	<div data-role="header"  data-position="fixed" class="ui-state-persist">
 			
 			<h4 style="text-align:center">Kecepatan Sesaat</h4>
@@ -326,7 +309,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 	</div>
 </div>
     
-    <div data-role="page" id="simulasi">
+    <div data-role="page" id="simulasi"  data-theme="d">
 		<div data-role="header">
 		<h4>Simulasi Gerak Parabola</h4></div>    
 		<div data-role="main-content">

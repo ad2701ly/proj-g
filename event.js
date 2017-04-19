@@ -17,6 +17,10 @@ $(document).on("swiperight", function(event) {
 	$("#menyu").panel("open");
 })
 
+
+
+
+
 $(document).on("tap","#inter",function (event) {
 	window.location.replace('#howtouse');
 });

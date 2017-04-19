@@ -23,10 +23,11 @@
     <preference name="auto-hide-splash-screen" value="false" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
-	<preference name="android-targetSdkVersion" value="14" />
+    <preference name="android-targetSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
+    <plugin name="com.jaeger.html5video" spec="1.2.1" source="pgb" />
     <plugin name="cordova-plugin-whitelist" version="1" />
-	<plugin name="cordova-plugin-splashscreen" source="npm" spec="3.2.2" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="3.2.2" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
