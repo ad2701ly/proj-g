@@ -30,7 +30,7 @@ $(function() {
 			$( "[data-role='listview']").listview();
 		});
 
-		
+//window.cordova.plugins.FileOpener.openFile("mg.mp4",alert("Perhatikan baik-baik"), alert("error"));		
 MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter",{ transition: "flip"})});
 
 	</script>
