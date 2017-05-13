@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, width=device-width" />
 
     
 
@@ -30,7 +30,7 @@ $(function() {
 			$( "[data-role='listview']").listview();
 		});
 
-//window.cordova.plugins.FileOpener.openFile("mg.mp4",alert("Perhatikan baik-baik"), alert("error"));		
+	
 MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter",{ transition: "flip"})});
 
 	</script>
@@ -88,7 +88,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 				<li>Setelah kalian tekan "Saya mengerti dan tutup", kalian akan memasuki menu utama</li>
 				<li>Terdapat 5 menu yaitu:</li>
 					<ul><li>Materi: merupakan konsep dasar pembelajaran ini</li>
-						<li>Simulasi: merupakan tiruan dari sesuatu yang bisa kita atur keadaannya</li>
+						<li>Simulasi: merupakan tiruan dari sesuatu kejadian yang bisa kita atur keadaannya</li>
 						<li>Latihan: digunakan untuk mengukur sejauh mana kemampuan kalian</li>
 						<li>Tentang: merupakan daftar aplikasi yang terlibat dalam pembuatan aplikasi ini</li>
 						<li>Keluar: digunakan untuk keluar dari program</li></ul>
@@ -109,9 +109,9 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 	<div class="wrapper">
 		 <p class="top">Perhatikan video dibawah ini</p>
 			<video height="200" controls class="vid">
-				<source src="mg.mp4" type="video/mp4"> 
+				<source src="mg.mp4"> 
 			</video>
-	
+			
 	
 	<p >Menurut kalian, apa yang terdapat dalam video diatas?<br>
 		Menurut kalian, dapatkah kalian menyebutkan peristiwa tersebut?<br>
@@ -121,7 +121,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 	
 <p class="bottom">Di Kelas X, Kalian telah mempelajari gerak lurus dan gerak melingkar. Dalam materi ini, Kalian akan mempelajari tentang gerak parabola dengan menggunakan analisis vektor.</p>
 
-		
+
 	</div>
 	</div>
 </div>
@@ -137,7 +137,6 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 	</div><!--header-->
 	<div class="wrapper">
 	<div data-role="main" class="ui-content">
-	</div>
 	<p>	Pada kegiatan sehari-hari, seringkali fenomena fisika terjadi. Salah satunya gerak melambung bola saat disepak. Menurut kalian mengapa bola dapat bergerak dengan lintasan parabola?<br></p>
 				<div>
 				<ul type="a" data-role="listview" data-inset="true">
@@ -163,6 +162,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 <p>Benar, selamat</p>
 </div>
 		
+	</div>
 		
 		<br>
 	</div>
