@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.gplus.proj" version="1.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.gplus.proj" version="1.10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>G+Proj</name>
     <description>
-        Skript Project
+        Penambahan plugin untuk bersi andriod dibawah kitkat (4.4)
     </description>
-    <author email="shay.ryu@gmail.com" href="http://phonegap.com">
+    <author email="shay.ryu@gmail.com" href="">
         Skript Team
     </author>
     <content src="index.html" />

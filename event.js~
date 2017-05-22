@@ -5,6 +5,10 @@ $(document).on("pageshow", "#blank", function(event) {
 $(document).on("pagebeforeshow", "#howtouse", function(event) {		
   				$(".ui-footer").toolbar("hide");
 });
+
+$(document).on("pagehide", "#blank", function(event) {		
+  				$(".ui-header").toolbar("show");
+});
 /*
 $(document).on("pagebeforeshow", "#simulasi", function(event) {		
 			if (helpsim==0) {
