@@ -111,11 +111,10 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		<div data-role="main-content">
 	<div class="wrapper">
 		 <p class="top">Perhatikan video dibawah ini</p>
-<video id="video_1" class="video-js vjs-default-skin" controls preload="none" width="320" height="240" poster="mg.png" data-setup="{}">
-    <source src="mg.mp4" type="video/mp4">
-    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading Android system webview that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
- </video>
-			
+		 <a href="#vidpop" data-rel="popup" class="ui-btn" data-transition="slide">Mainkan Video</a>
+		 <div id="vidpop" data-role="popup">
+<iframe type="text/html" width="500" height="390" src="mg.mp4" frameborder="0" autoplay="0"></iframe>
+			</div>
 	
 	<p >Menurut kalian, apa yang terdapat dalam video diatas?<br>
 		Menurut kalian, dapatkah kalian menyebutkan peristiwa tersebut?<br>
