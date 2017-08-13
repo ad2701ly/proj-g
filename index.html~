@@ -111,9 +111,8 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		<div data-role="main-content">
 	<div class="wrapper">
 		 <p class="top">Perhatikan video dibawah ini</p>
-		 <a href="#vidpop" data-rel="popup" data-transition="slide">Mainkan Video</a>
-		 <div id="vidpop" data-role="popup">
-<iframe type="text/html" width="500" height="390" src="mg.mp4" frameborder="0" autoplay="0"></iframe>
+		 <div>
+		 <video id="aaa" src="mg.mp4" width="600"></video>
 			</div>
 	
 	<p >Menurut kalian, apa yang terdapat dalam video diatas?<br>
@@ -422,7 +421,15 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
     
     
     <div data-role="page" id="about">
-		<div data-role="header"><h4>Tentang</h4></div>     
+		<div data-role="header"><h4>Tentang</h4>
+		<div data-role="navbar" data-grid="b">
+			<ul>
+				<li><a href="#about" class="ui-btn">Aplikasi Pembuatan</a></li>
+				<li><a href="#dapus" class="ui-btn">Daftar Pustaka</a></li>
+				<li><a href="#profil" class="ui-btn">Profil Pengembang</a></li>
+			</ul>
+		</div>
+			</div>     
 		<div data-role="main-content">
 		<h2>Aplikasi ini dibuat dengan menggunakan</h2>
 		<ul data-role="listview" >
@@ -436,6 +443,44 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 			<li ><img src="img/mj.png"><h3>MathJax</h3><p>&copy; 2009-2017 The MathJax Team</p></li>
 			<li ><img src="img/audalogo.png"><h3>Audacity</h3><p>&copy; 2016 Dominic Mazzoni and The Audacity Team.</p></li>
 			<li ><img src="img/flaticon.jpg"><h3>Music Player Icon</h3><p>&copy; 2010-2017 Designed by Chanut-is-Industries from Flaticon.</p></li>
+		</ul>		
+		
+		</div>    
+    </div>
+    
+    <div data-role="page" id="dapus">
+		<div data-role="header"><h4>Tentang</h4>
+		<div data-role="navbar" data-grid="b">
+			<ul>
+				<li><a href="#about" class="ui-btn">Aplikasi Pembuatan</a></li>
+				<li><a href="#dapus" class="ui-btn">Daftar Pustaka</a></li>
+				<li><a href="#profil" class="ui-btn">Profil Pengembang</a></li>
+			</ul>
+		</div>
+			</div>     
+		<div data-role="main-content">
+		<h2>Daftar Pustaka</h2>
+		<ul data-role="listview" >
+			<li>Supiyanto</li>
+			<li>Halliday Resnick</li>
+		</ul>		
+		
+		</div>    
+    </div>
+    
+    <div data-role="page" id="profil">
+		<div data-role="header"><h4>Tentang</h4>
+		<div data-role="navbar" data-grid="b">
+			<ul>
+				<li><a href="#about" class="ui-btn">Aplikasi Pembuatan</a></li>
+				<li><a href="#dapus" class="ui-btn">Daftar Pustaka</a></li>
+				<li><a href="#profil" class="ui-btn">Profil Pengembang</a></li>
+			</ul>
+		</div>
+			</div>     
+		<div data-role="main-content">
+		<h2>Profil Pengembang</h2>
+		<ul data-role="listview" >
 			<li ><img src="img/peng.jpeg"><h3>Profil Pengembang</h3><p style="white-space: normal;">Satria Adhi Kusuma Marhadini lahir di Sragen tahun 1992, saat ini sedang menempuh studi S1 pada prodi pendidikan fisika di Universitas Negeri Semarang</p></li>
 		</ul>		
 		
