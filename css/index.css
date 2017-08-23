@@ -390,7 +390,9 @@ margin: 1%;
     border-left: 1px solid black;
 }
 
-
+#aaa video{
+    width: 400px;
+}
 .syntax{
     background-color: #bdc3c7;
     width: 30%;

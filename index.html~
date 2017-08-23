@@ -111,8 +111,8 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		<div data-role="main-content">
 	<div class="wrapper">
 		 <p class="top">Perhatikan video dibawah ini</p>
-		 <div>
-		 <video id="aaa" src="mg.mp4" width="600"></video>
+		 <div id="aaa">
+		 <video src="mg.mp4" height="200px" poster="mg.png" controls >Tidak Support Video</video>
 			</div>
 	
 	<p >Menurut kalian, apa yang terdapat dalam video diatas?<br>
