@@ -1,4 +1,4 @@
-fi<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
@@ -390,7 +390,7 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
    
     
     
-    <div data-role="page" id="latihan"  data-theme="c">
+    <div data-role="page" id="latihan"  data-theme="a">
 		<div data-role="header"><h4>Latihan</h4></div>   
 		<div data-role="main-content">
 		<div class="ui-grid-b">
@@ -461,7 +461,6 @@ MathJax.Hub.Register.StartupHook("End",function () {$.mobile.changePage("#inter"
 		<div data-role="main-content">
 		<h2>Daftar Pustaka</h2>
 		<ul data-role="listview" >
-			<li>Supiyanto</li>
 			<li>Walker, J., D. Halliday & R. Resnick. 2014. <i>Fundamental of Physics - Extended Edition</i>. Hoboken: John Wiley & Sons, Inc</li>
 		</ul>		
 		
